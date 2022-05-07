@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "build-watch": "rescript build -w",
+        "bundle-watch": "esbuild src/index.bs.js --bundle --sourcemap --outfile=public/bundle.js --watch",
+        "serve": "lite-server"
+    },
+    "dependencies": {
+        "@emotion/css": "^11.9.0",
+        "@rescript/react": "^0.10.3",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    },
+    "devDependencies": {
+        "rescript": "^9.1.4"
+    }
+}
