@@ -313,7 +313,7 @@ module Component = {
     }
 
     let onNextRoundClick = _ => {
-      if round < Data.numberOfRounds {
+      if round < numberOfRounds {
         setRound(r => r + 1)
       }
     }
