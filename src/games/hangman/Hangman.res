@@ -1,5 +1,57 @@
 let string_of_char = c => String.make(1, c)
 
+module Data = {
+  let shuffledBands = Belt.Array.shuffle([
+    "ANATEUS",
+    "AVERSE SEFIRA",
+    "AZAGHAL",
+    "BAZZAH",
+    "BESTIAL SUMMONING",
+    "BLACK FIRE",
+    "BLOODBATH",
+    "BLUDGEON",
+    "BORKNAGAR",
+    "CRYPTIC ABUSE",
+    "DARKTHRONE",
+    "DAWN OF DREAMS",
+    "DEFEATED SANITY",
+    "EMPEROR",
+    "ENSLAVED",
+    "ENTHRONED",
+    "ESCHATON",
+    "FINNTROLL",
+    "GOAT'S ASS TRUMPET",
+    "GOSFORTH",
+    "GUT ROT",
+    "IMMORTAL",
+    "INSANITY",
+    "KATHARSIS",
+    "KORGONTHURUS",
+    "KUTURIAT",
+    "LEVIATHAN",
+    "MATER TENEBRA",
+    "MAYHEM",
+    "MENTAL INFESTATION",
+    "MISERICORDIAM",
+    "MOONSPELL",
+    "NAGLFAR",
+    "NIGHT BRINGER",
+    "ORCHIDECTOMY",
+    "SADISTIC SAINT",
+    "SONGE D'ENFER",
+    "SORROWSTORM",
+    "SPERM SWAMP",
+    "SUMMONING",
+    "TUNDRA",
+    "UNTORY",
+    "WAKING THE CADAVER",
+    "WOLVES IN THE THRONE ROOM",
+    "XASTHUR",
+  ])
+
+  let numberOfRounds = Array.length(shuffledBands)
+}
+
 module Slot = {
   type t = {
     char: char,
@@ -131,7 +183,7 @@ module Letter = {
   }
 }
 
-module Styles = {
+module Component = {
   open Emotion
 
   let main = css(`
@@ -159,100 +211,140 @@ module Styles = {
 
     overflow-x: scroll;
   `)
-}
 
-module Data = {
-  let shuffledBands =
-    Belt.Array.shuffle(["aaaaa bb abc cccc' dddddd", "hallo welt!"])->Belt.Array.map(name =>
-      String.uppercase_ascii(name)
-    )
-  let numberOfRounds = Array.length(shuffledBands)
-}
+  let fadeOut = keyframes(`
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    30% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  `)
 
-@react.component
-let make = () => {
-  let (round, setRound) = React.useState(_ => 1)
-  let (slotGroups, setSlotGroups) = React.useState(_ => [])
-  let (letters, setLetters) = React.useState(_ => [])
+  let miss = css(
+    `
+      position: fixed;
+      inset: 0;
 
-  let numberOfRounds = Data.numberOfRounds
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  React.useEffect1(() => {
-    setSlotGroups(_ => SlotGroups.make(Data.shuffledBands[round - 1]))
-    setLetters(_ => Letter.makeList())
+      animation: ${fadeOut} 2s ease-in forwards;
 
-    None
-  }, [round])
+      ::before {
+        content: "✘";
 
-  let onLetterClick = (clickedLetter: Letter.t) => {
-    if !clickedLetter.guessed {
-      // set letter guessed to true
-      setLetters(
-        Array.map(letter => {
-          if letter === clickedLetter {
-            {...letter, guessed: true}
-          } else {
-            letter
-          }
-        }),
-      )
+        color: #e05d29;
 
-      // count all slots with this character
-      let count = Belt.Array.reduce(slotGroups, 0, (result, slotGroup) =>
-        Belt.Array.reduce(slotGroup, result, (subresult, slot) =>
-          slot.char === clickedLetter.char ? subresult + 1 : subresult
+        font-size: 30rem;
+        font-size: 130vw;
+      }
+  `,
+  )
+
+  @react.component
+  let make = () => {
+    let (round, setRound) = React.useState(_ => 1)
+    let (slotGroups, setSlotGroups) = React.useState(_ => [])
+    let (letters, setLetters) = React.useState(_ => [])
+    let (showMiss, setShowMiss) = React.useState(_ => false)
+
+    let numberOfRounds = Data.numberOfRounds
+    let img = `/assets/bandlogos/${Data.shuffledBands[round - 1]}.jpg`
+
+    React.useEffect1(() => {
+      setSlotGroups(_ => SlotGroups.make(Data.shuffledBands[round - 1]))
+      setLetters(_ => Letter.makeList())
+
+      None
+    }, [round])
+
+    let onLetterClick = (clickedLetter: Letter.t) => {
+      if !clickedLetter.guessed {
+        // set letter guessed to true
+        setLetters(
+          Array.map(letter => {
+            if letter === clickedLetter {
+              {...letter, guessed: true}
+            } else {
+              letter
+            }
+          }),
         )
-      )
-      if count > 0 {
-        // reveal slots
-        setSlotGroups(
-          Array.map(
-            Array.map((slot: Slot.t) => {
-              if slot.char === clickedLetter.char {
-                {...slot, hidden: false}
-              } else {
-                slot
-              }
-            }),
-          ),
+
+        // count all slots with this character
+        let count = Belt.Array.reduce(slotGroups, 0, (result, slotGroup) =>
+          Belt.Array.reduce(slotGroup, result, (subresult, slot) =>
+            slot.char === clickedLetter.char ? subresult + 1 : subresult
+          )
         )
+        if count > 0 {
+          // reveal slots
+          setSlotGroups(
+            Array.map(
+              Array.map((slot: Slot.t) => {
+                if slot.char === clickedLetter.char {
+                  {...slot, hidden: false}
+                } else {
+                  slot
+                }
+              }),
+            ),
+          )
+        } else {
+          setShowMiss(_ => true)
+        }
       }
     }
-  }
 
-  let onResolveClick = _ => {
-    setSlotGroups(Array.map(Array.map((slot: Slot.t) => {...slot, hidden: false})))
-  }
-
-  let onNextRoundClick = _ => {
-    if round < Data.numberOfRounds {
-      setRound(r => r + 1)
+    let onResolveClick = _ => {
+      setSlotGroups(Array.map(Array.map((slot: Slot.t) => {...slot, hidden: false})))
     }
-  }
 
-  <div className=Shared.Styles.fullscreenContainer>
-    <header className=Shared.Styles.header>
-      <h1> {React.string("Bandlogo-Hangman")} </h1>
-      <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
-    </header>
-    <main className=Styles.main>
-      <SlotGroups.Component slotGroups />
-      <div className=Styles.imageContainer>
-        <img
-          src="https://i.picsum.photos/id/261/300/300.jpg?hmac=tcMWyW5jZL74d4E5hz7uo3gIsjXZnS-AigP4nf8CzP0"
-        />
-      </div>
-      <div className=Styles.lettersContainer>
-        {letters->Belt.Array.map(letter => <Letter.Component letter onLetterClick />)->React.array}
-      </div>
-    </main>
-    <footer className=Shared.Styles.footer>
-      <button className=Shared.Styles.button onClick=onResolveClick>
-        {React.string(`Auflösen`)}
-      </button>
-      <button className=Shared.Styles.primaryButton onClick=onNextRoundClick>
-        {React.string(`Nächste Runde`)}
-      </button>
-    </footer>
-  </div>
+    let onNextRoundClick = _ => {
+      if round < Data.numberOfRounds {
+        setRound(r => r + 1)
+      }
+    }
+
+    let onMissAnimationEnd = _ => {
+      setShowMiss(_ => false)
+    }
+
+    <div className=Shared.Styles.fullscreenContainer>
+      <header className=Shared.Styles.header>
+        <h1> {React.string("Bandlogo-Hangman")} </h1>
+        <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
+      </header>
+      <main className=main>
+        <SlotGroups.Component slotGroups />
+        <div className=imageContainer> <img src=img /> </div>
+        <div className=lettersContainer>
+          {letters
+          ->Belt.Array.map(letter => <Letter.Component letter onLetterClick />)
+          ->React.array}
+        </div>
+      </main>
+      <footer className=Shared.Styles.footer>
+        <button className=Shared.Styles.button onClick=onResolveClick>
+          {React.string(`Auflösen`)}
+        </button>
+        <button className=Shared.Styles.primaryButton onClick=onNextRoundClick>
+          {React.string(`Nächste Runde`)}
+        </button>
+      </footer>
+      {showMiss ? <div className=miss onAnimationEnd=onMissAnimationEnd /> : React.null}
+    </div>
+  }
 }

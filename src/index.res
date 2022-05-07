@@ -1,7 +1,7 @@
 module App = {
   @react.component
   let make = () => {
-    <Hangman />
+    <Hangman.Component />
   }
 }
 
