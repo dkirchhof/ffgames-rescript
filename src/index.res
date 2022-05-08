@@ -1,10 +1,16 @@
 module App = {
   @react.component
   let make = () => {
-    /* <Hangman.Component /> */
-    /* <Pantomime.Component /> */
-    /* <Appicons.Component /> */
-    <YesNo.Component />
+    let url = RescriptReactRouter.useUrl()
+
+    switch url.hash {
+      | ""  => <Home.Component /> 
+      | "/appicons-zeichnen" => <Appicons.Component /> 
+      | "/bandlogo-hangman" => <Hangman.Component />
+      | "/porno-pantomime" => <Pantomime.Component />
+      | "/wer-kommt" => <YesNo.Component />
+      | _  => <div>{React.string("404")}</div> 
+    } 
   }
 }
 

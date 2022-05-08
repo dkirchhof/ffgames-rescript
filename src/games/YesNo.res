@@ -372,7 +372,9 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <header className=Shared.Styles.header> <h1> {React.string("Wer kommt?")} </h1> </header>
+      <header className=Shared.Styles.header>
+        <h1> {React.string(Games.werKommt.name)} </h1>
+      </header>
       <main className=main>
         {questions
         ->Belt.Array.mapWithIndex((index, question) => {

@@ -390,7 +390,7 @@ module Component = {
 
     <div className=Shared.Styles.fullscreenContainer>
       <header className=Shared.Styles.header>
-        <h1> {React.string("Porno-Pantomime")} </h1>
+        <h1> {React.string(Games.pornoPantomime.name)} </h1>
         <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
       </header>
       <main className=main>

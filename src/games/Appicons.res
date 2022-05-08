@@ -110,7 +110,7 @@ module Component = {
 
     <div className=Shared.Styles.fullscreenContainer>
       <header className=Shared.Styles.header>
-        <h1> {React.string("Appicons")} </h1>
+        <h1> {React.string(Games.appicons.name)} </h1>
         <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
       </header>
       <main className=main>
