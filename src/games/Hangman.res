@@ -111,7 +111,13 @@ module SlotGroup = {
 
     @react.component
     let make = (~slots) => {
-      <div className> {slots->Belt.Array.map(slot => <Slot.Component slot />)->React.array} </div>
+      <div className>
+        {slots
+        ->Belt.Array.mapWithIndex((index, slot) =>
+          <Slot.Component key={Belt.Int.toString(index)} slot />
+        )
+        ->React.array}
+      </div>
     }
   }
 }
@@ -133,7 +139,11 @@ module SlotGroups = {
     @react.component
     let make = (~slotGroups) => {
       <div className>
-        {slotGroups->Belt.Array.map(slots => <SlotGroup.Component slots />)->React.array}
+        {slotGroups
+        ->Belt.Array.mapWithIndex((index, slots) =>
+          <SlotGroup.Component key={Belt.Int.toString(index)} slots />
+        )
+        ->React.array}
       </div>
     }
   }
@@ -332,7 +342,9 @@ module Component = {
         <div className=imageContainer> <img src=img /> </div>
         <div className=lettersContainer>
           {letters
-          ->Belt.Array.map(letter => <Letter.Component letter onLetterClick />)
+          ->Belt.Array.mapWithIndex((index, letter) =>
+            <Letter.Component key={Belt.Int.toString(index)} letter onLetterClick />
+          )
           ->React.array}
         </div>
       </main>
