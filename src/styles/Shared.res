@@ -1,9 +1,11 @@
 open Emotion
 
 module Colors = {
-  let gray = "#353030"
+  let darkGray = "#353030"
+  let lightGray = "#efefef"
   let yellow = "#EAE5D2"
   let orange = "#E05D29"
+  let green = "#b8ebb8";
 }
 
 module Styles = {
@@ -14,7 +16,7 @@ module Styles = {
     display: grid;
     grid-template-rows: auto 1fr auto;
 
-    color: ${Colors.gray};
+    color: ${Colors.darkGray};
 
     font-family: sans-serif;
   `)
@@ -29,7 +31,7 @@ module Styles = {
       padding: 1rem;
 
       color: ${Colors.yellow};
-      background-color: ${Colors.gray};
+      background-color: ${Colors.darkGray};
 
       font-weight: normal;
       font-size: 1.5rem;

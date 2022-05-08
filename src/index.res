@@ -3,7 +3,8 @@ module App = {
   let make = () => {
     /* <Hangman.Component /> */
     /* <Pantomime.Component /> */
-    <Appicons.Component />
+    /* <Appicons.Component /> */
+    <YesNo.Component />
   }
 }
 

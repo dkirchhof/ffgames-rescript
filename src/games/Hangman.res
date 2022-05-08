@@ -77,8 +77,8 @@ module Slot = {
       width: 1.5rem;
       height: 1.5rem;
 
-      background: #efefef;
-      border-bottom: 2px solid black;
+      background: ${Shared.Colors.lightGray};
+      border-bottom: 2px solid ${Shared.Colors.darkGray};
 
       font-size: 1rem;
       text-transform: uppercase;
@@ -172,7 +172,7 @@ module Letter = {
       width: 2rem;
       height: 2rem;
 
-      background: #efefef;
+      background: ${Shared.Colors.lightGray};
       border-radius: 0.5rem;
       opacity: ${guessed ? "0.3" : "1"};
 
@@ -255,7 +255,7 @@ module Component = {
       ::before {
         content: "✘";
 
-        color: #e05d29;
+        color: ${Shared.Colors.orange};
 
         font-size: 30rem;
         font-size: 130vw;
