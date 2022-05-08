@@ -7,4 +7,5 @@ module App = {
   }
 }
 
-ReactDOM.render(<App />, ReactDOM.querySelector("#app")->Belt.Option.getExn)
+let root = React18.createRoot(ReactDOM.querySelector("#app")->Belt.Option.getExn)
+React18.Root.render(root, <App />)
