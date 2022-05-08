@@ -2,7 +2,8 @@ module App = {
   @react.component
   let make = () => {
     /* <Hangman.Component /> */
-    <Pantomime.Component />
+    /* <Pantomime.Component /> */
+    <Appicons.Component />
   }
 }
 

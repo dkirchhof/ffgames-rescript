@@ -1,0 +1,533 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3960 120" width="3960" height="120">
+	<title>Ultimate App Icon Set-sketch-svg</title>
+	<defs>
+		<linearGradient id="g1" x1="3900" y1="8" x2="3900" y2="112" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1ad6fd"/>
+			<stop offset="1" stop-color="#1e63f0"/>
+		</linearGradient>
+		<linearGradient id="g2" x1="3780" y1="0" x2="3780" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ec4cbc"/>
+			<stop offset="1" stop-color="#c844fb"/>
+		</linearGradient>
+		<linearGradient id="g3" x1="3660" y1="0" x2="3660" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#19d6fd"/>
+			<stop offset="1" stop-color="#1d64f0"/>
+		</linearGradient>
+		<linearGradient id="g4" x1="3548.8" y1="-7.9" x2="3582.9" y2="139" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#4e60d3"/>
+			<stop offset=".1" stop-color="#913baf"/>
+			<stop offset=".3" stop-color="#d52d88"/>
+			<stop offset=".5" stop-color="#d72e85"/>
+			<stop offset=".8" stop-color="#e6366d"/>
+			<stop offset="1" stop-color="#f26d4f"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m3571.41 0c17.34 0 28.59 11.25 28.59 28.59v62.82c0 17.34-11.25 28.59-28.59 28.59h-62.82c-17.34 0-28.59-11.25-28.59-28.59v-62.82c0-17.34 11.25-28.59 28.59-28.59z"/>
+		</clipPath>
+		<radialGradient id="g5" cx="3520.8" cy="120.4" r="109.2" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#fed980"/>
+			<stop offset=".4" stop-color="#fcae49"/>
+			<stop offset=".6" stop-color="#f06745"/>
+			<stop offset="1" stop-color="#e83d5c" stop-opacity="0"/>
+		</radialGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="m3419.5 95c-23.2 0-41.5-18.36-41.5-41 0-22.64 18.8-41 42-41 21.89 0 39.87 16.35 41.82 37.22q0.58 2.75 0.16 6.38-0.07 0.57-0.15 1.13c-0.41 4.46-1.31 9.8-3.07 13.74-10.4 26.6-38.76 37.98-38.76 37.98v-14.45c-0.14 0-0.36 0-0.5 0z"/>
+		</clipPath>
+		<linearGradient id="g6" x1="3412.3" y1="37.8" x2="3451.8" y2="92.9" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#000000" stop-opacity=".2"/>
+			<stop offset="1" stop-color="#000000" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g7" x1="3300.5" y1="28" x2="3300.5" y2="92" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#e72b22"/>
+			<stop offset="1" stop-color="#dd2a22"/>
+		</linearGradient>
+		<linearGradient id="g8" x1="3152.7" y1="83.5" x2="3163.4" y2="90" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#002d77" stop-opacity=".8"/>
+			<stop offset="1" stop-color="#2f71dd" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g9" x1="3167.3" y1="35.5" x2="3180.9" y2="54.5" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1b935a"/>
+			<stop offset="1" stop-color="#118b50" stop-opacity="0"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp3">
+			<path d="m3091.41 0c17.34 0 28.59 11.25 28.59 28.59v62.82c0 17.34-11.25 28.59-28.59 28.59h-62.82c-17.34 0-28.59-11.25-28.59-28.59v-62.82c0-17.34 11.25-28.59 28.59-28.59z"/>
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp4">
+			<path d="m2896 33c0-2.76 2.24-5 5-5h78c2.76 0 5 2.24 5 5v54c0 2.76-2.24 5-5 5h-78c-2.76 0-5-2.24-5-5z"/>
+		</clipPath>
+		<linearGradient id="g10" x1="2965" y1="101" x2="2899.9" y2="23" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#dad8d8" stop-opacity="0"/>
+			<stop offset="1" stop-color="#c7c7c7"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp5">
+			<path d="m2776 60c0-24.3 19.7-44 44-44 24.3 0 44 19.7 44 44 0 24.3-19.7 44-44 44-24.3 0-44-19.7-44-44z"/>
+		</clipPath>
+		<linearGradient id="g11" x1="2830.9" y1="68.8" x2="2816.9" y2="101.2" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#13834d"/>
+			<stop offset="1" stop-color="#139f5b"/>
+		</linearGradient>
+		<linearGradient id="g12" x1="2807.4" y1="62.8" x2="2780.9" y2="45.1" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#b4372c"/>
+			<stop offset="1" stop-color="#cf4539"/>
+		</linearGradient>
+		<linearGradient id="g13" x1="2841.9" y1="38.9" x2="2850.3" y2="51.2" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#d3aa36"/>
+			<stop offset="1" stop-color="#ffcd41" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g14" x1="2700" y1="16" x2="2700" y2="109.3" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#00c6ff"/>
+			<stop offset="1" stop-color="#006eff"/>
+		</linearGradient>
+		<linearGradient id="g15" x1="1980" y1="0" x2="1980" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#44b2d1"/>
+			<stop offset="1" stop-color="#379cb9"/>
+		</linearGradient>
+		<linearGradient id="g16" x1="1740" y1="0" x2="1740" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#64ff80"/>
+			<stop offset="1" stop-color="#04b622"/>
+		</linearGradient>
+		<linearGradient id="g17" x1="1380" y1="0" x2="1380" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#78de00"/>
+			<stop offset="1" stop-color="#06a300"/>
+		</linearGradient>
+		<linearGradient id="g18" x1="1378.9" y1="16.5" x2="1380" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#78de00"/>
+			<stop offset="1" stop-color="#06a300"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp6">
+			<path d="m1411.41 0c17.34 0 28.59 11.25 28.59 28.59v62.82c0 17.34-11.25 28.59-28.59 28.59h-62.82c-17.34 0-28.59-11.25-28.59-28.59v-62.82c0-17.34 11.25-28.59 28.59-28.59z"/>
+		</clipPath>
+		<linearGradient id="g19" x1="1379.9" y1="14" x2="1379.9" y2="90.8" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#a4ec00"/>
+			<stop offset="1" stop-color="#6acc00"/>
+		</linearGradient>
+		<linearGradient id="g20" x1="1260" y1="0" x2="1260" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#0e8ee9"/>
+			<stop offset="1" stop-color="#0564c8"/>
+		</linearGradient>
+		<linearGradient id="g21" x1="1260" y1="45" x2="1260" y2="74.5" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#0b7edc"/>
+			<stop offset="1" stop-color="#0970d3"/>
+		</linearGradient>
+		<linearGradient id="g22" x1="1140" y1="60" x2="1140" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#5eeb4b"/>
+			<stop offset="1" stop-color="#19ab39"/>
+		</linearGradient>
+		<radialGradient id="g23" cx="1140" cy="60" r="60" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#74d572"/>
+			<stop offset=".4" stop-color="#90d68f" stop-opacity=".7"/>
+			<stop offset="1" stop-color="#d8d8d8" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="g24" x1="1140.3" y1="23.2" x2="1140.3" y2="104" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#666666"/>
+			<stop offset="1" stop-color="#2a2a2a"/>
+		</linearGradient>
+		<linearGradient id="g25" x1="1020.2" y1="27.6" x2="1020.2" y2="107" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#129ef6"/>
+			<stop offset="1" stop-color="#0180e6"/>
+		</linearGradient>
+		<linearGradient id="g26" x1="900" y1="12.6" x2="900" y2="106" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#56b1e2"/>
+			<stop offset=".5" stop-color="#1a4c7b"/>
+			<stop offset="1" stop-color="#03030a"/>
+		</linearGradient>
+		<linearGradient id="g27" x1="780" y1="0" x2="780" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#0e3643"/>
+			<stop offset="1" stop-color="#0b2d39"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp7">
+			<path d="m744 60c0-19.88 16.12-36 36-36 19.88 0 36 16.12 36 36 0 19.88-16.12 36-36 36-19.88 0-36-16.12-36-36z"/>
+		</clipPath>
+		<linearGradient id="g28" x1="660" y1="0" x2="660" y2="120" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#f8fc4a"/>
+			<stop offset="1" stop-color="#fec42e"/>
+		</linearGradient>
+		<linearGradient id="g29" x1="660" y1="27" x2="660" y2="93" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#5b471d"/>
+			<stop offset="1" stop-color="#3c2e10"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp8">
+			<path d="m627 60c0-18.23 14.77-33 33-33 18.23 0 33 14.77 33 33 0 18.23-14.77 33-33 33-18.23 0-33-14.77-33-33z"/>
+		</clipPath>
+		<linearGradient id="g30" x1="659.7" y1="-0.3" x2="659.7" y2="120.6" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#f8fc4a"/>
+			<stop offset="1" stop-color="#fec42e"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp9">
+			<path d="m539.74 19.94v-6h0.28c5.64 0 11.92 3.87 14.38 8.89l26.57 54.15c4.91 9.99 0.57 21.86-9.65 26.49l-0.56 0.25c-8.01 3.63-19.46 1.61-24.78-4.09l4.26-4.22c0.11 0.11 0.11 0.11 0.45 0.44 0.34 0.32 0.34 0.32-3.68 4.78-0.11-0.11-0.11-0.11-0.91-0.87-3.16-3.01-6.04-5.95-8.66-9.08-3.68-4.4-7.88-10.15-8.94-12.03-1.48-2.6-2.55-5.1-3.28-7.43-0.46-1.44-0.7-2.53-0.8-3.2l0.09 0.41c-3.33-11.38 3.93-21.14 15.56-21.14v6c-7.62 0-12.01 5.91-9.8 13.46l0.06 0.2 0.03 0.21q0.01 0.08 0.1 0.5 0.17 0.75 0.48 1.75c0.61 1.94 1.52 4.06 2.78 6.29 0.85 1.51 4.86 6.99 8.33 11.13 2.43 2.92 5.18 5.72 8.19 8.58 0.79 0.76 0.79 0.76-3.23 5.22-0.11-0.11-0.11-0.11-0.45-0.44-0.35-0.32-0.35-0.32-0.46-0.43l2.07-2.17 2.19-2.05c3.53 3.77 12.21 5.3 17.93 2.71l0.55-0.25c7.15-3.23 10.15-11.44 6.75-18.38l-26.57-54.14c-1.46-2.96-5.63-5.54-9-5.54z"/>
+		</clipPath>
+		<image width="127" height="127" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI3IiBoZWlnaHQ9IjEyNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMjcuMiA4MGMwIDcuMy01LjkgMTMuMi0xMy4yIDEzLjJDNi43IDkzLjIuOCA4Ny4zLjggODBjMC03LjMgNS45LTEzLjIgMTMuMi0xMy4yaDEzLjJWODB6bTYuNiAwYzAtNy4zIDUuOS0xMy4yIDEzLjItMTMuMiA3LjMgMCAxMy4yIDUuOSAxMy4yIDEzLjJ2MzNjMCA3LjMtNS45IDEzLjItMTMuMiAxMy4yLTcuMyAwLTEzLjItNS45LTEzLjItMTMuMlY4MHoiIGZpbGw9IiNFMDFFNUEiLz4KICA8cGF0aCBkPSJNNDcgMjdjLTcuMyAwLTEzLjItNS45LTEzLjItMTMuMkMzMy44IDYuNSAzOS43LjYgNDcgLjZjNy4zIDAgMTMuMiA1LjkgMTMuMiAxMy4yVjI3SDQ3em0wIDYuN2M3LjMgMCAxMy4yIDUuOSAxMy4yIDEzLjIgMCA3LjMtNS45IDEzLjItMTMuMiAxMy4ySDEzLjlDNi42IDYwLjEuNyA1NC4yLjcgNDYuOWMwLTcuMyA1LjktMTMuMiAxMy4yLTEzLjJINDd6IiBmaWxsPSIjMzZDNUYwIi8+CiAgPHBhdGggZD0iTTk5LjkgNDYuOWMwLTcuMyA1LjktMTMuMiAxMy4yLTEzLjIgNy4zIDAgMTMuMiA1LjkgMTMuMiAxMy4yIDAgNy4zLTUuOSAxMy4yLTEzLjIgMTMuMkg5OS45VjQ2Ljl6bS02LjYgMGMwIDcuMy01LjkgMTMuMi0xMy4yIDEzLjItNy4zIDAtMTMuMi01LjktMTMuMi0xMy4yVjEzLjhDNjYuOSA2LjUgNzIuOC42IDgwLjEuNmM3LjMgMCAxMy4yIDUuOSAxMy4yIDEzLjJ2MzMuMXoiIGZpbGw9IiMyRUI2N0QiLz4KICA8cGF0aCBkPSJNODAuMSA5OS44YzcuMyAwIDEzLjIgNS45IDEzLjIgMTMuMiAwIDcuMy01LjkgMTMuMi0xMy4yIDEzLjItNy4zIDAtMTMuMi01LjktMTMuMi0xMy4yVjk5LjhoMTMuMnptMC02LjZjLTcuMyAwLTEzLjItNS45LTEzLjItMTMuMiAwLTcuMyA1LjktMTMuMiAxMy4yLTEzLjJoMzMuMWM3LjMgMCAxMy4yIDUuOSAxMy4yIDEzLjIgMCA3LjMtNS45IDEzLjItMTMuMiAxMy4ySDgwLjF6IiBmaWxsPSIjRUNCMjJFIi8+Cjwvc3ZnPgo="/>
+		<image width="2400" height="2800" id="img2" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuNiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNDAwIDI4MDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0MDAgMjgwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOiM5MTQ2RkY7fQo8L3N0eWxlPgo8dGl0bGU+QXNzZXQgMjwvdGl0bGU+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIyMjAwLDEzMDAgMTgwMCwxNzAwIDE0MDAsMTcwMCAxMDUwLDIwNTAgMTA1MCwxNzAwIDYwMCwxNzAwIDYwMCwyMDAgMjIwMCwyMDAgCSIvPgoJPGc+CgkJPGcgaWQ9IkxheWVyXzEtMiI+CgkJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik01MDAsMEwwLDUwMHYxODAwaDYwMHY1MDBsNTAwLTUwMGg0MDBsOTAwLTkwMFYwSDUwMHogTTIyMDAsMTMwMGwtNDAwLDQwMGgtNDAwbC0zNTAsMzUwdi0zNTBINjAwVjIwMGgxNjAwCgkJCQlWMTMwMHoiLz4KCQkJPHJlY3QgeD0iMTcwMCIgeT0iNTUwIiBjbGFzcz0ic3QxIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjYwMCIvPgoJCQk8cmVjdCB4PSIxMTUwIiB5PSI1NTAiIGNsYXNzPSJzdDEiIHdpZHRoPSIyMDAiIGhlaWdodD0iNjAwIi8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="/>
+		<image width="256" height="257" id="img3" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiIHZpZXdCb3g9IjAgLTI4LjUgMjU2IDI1NiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+CiAgICA8Zz4KICAgICAgICA8cGF0aCBkPSJNMjE2Ljg1NjMzOSwxNi41OTY2MDMxIEMyMDAuMjg1MDAyLDguODQzMjg2NjUgMTgyLjU2NjE0NCwzLjIwODQ5ODggMTY0LjA0MTU2NCwwIEMxNjEuNzY2NTIzLDQuMTEzMTgxMDYgMTU5LjEwODYyNCw5LjY0NTQ5OTA4IDE1Ny4yNzYwOTksMTQuMDQ2NDM3OSBDMTM3LjU4Mzk5NSwxMS4wODQ5ODk2IDExOC4wNzI5NjcsMTEuMDg0OTg5NiA5OC43NDMwMTYzLDE0LjA0NjQzNzkgQzk2LjkxMDg0MTcsOS42NDU0OTkwOCA5NC4xOTI1ODM4LDQuMTEzMTgxMDYgOTEuODk3MTg5NSwwIEM3My4zNTI2MDY4LDMuMjA4NDk4OCA1NS42MTMzOTQ5LDguODYzOTkxMTcgMzkuMDQyMDU4MywxNi42Mzc2NjEyIEM1LjYxNzUyMjkzLDY3LjE0NjUxNCAtMy40NDMzMTkxLDExNi40MDA4MTMgMS4wODcxMTA2OSwxNjQuOTU1NzIxIEMyMy4yNTYwMTk2LDE4MS41MTA5MTUgNDQuNzQwMzYzNCwxOTEuNTY3Njk3IDY1Ljg2MjEzMjUsMTk4LjE0ODU3NiBDNzEuMDc3MjE1MSwxOTAuOTcxMTI2IDc1LjcyODM2MjgsMTgzLjM0MTMzNSA3OS43MzUyMTM5LDE3NS4zMDAyNjEgQzcyLjEwNDAxOSwxNzIuNDAwNTc1IDY0Ljc5NDk3MjQsMTY4LjgyMjIwMiA1Ny44ODg3ODY2LDE2NC42Njc5NjMgQzU5LjcyMDk2MTIsMTYzLjMxMDU4OSA2MS41MTMxMzA0LDE2MS44OTE0NTIgNjMuMjQ0NTg5OCwxNjAuNDMxMjU3IEMxMDUuMzY3NDEsMTgwLjEzMzE4NyAxNTEuMTM0OTI4LDE4MC4xMzMxODcgMTkyLjc1NDUyMywxNjAuNDMxMjU3IEMxOTQuNTA2MzM2LDE2MS44OTE0NTIgMTk2LjI5ODE1NCwxNjMuMzEwNTg5IDE5OC4xMTAzMjYsMTY0LjY2Nzk2MyBDMTkxLjE4Mzc4NywxNjguODQyNTU2IDE4My44NTQ3MzcsMTcyLjQyMDkyOSAxNzYuMjIzNTQyLDE3NS4zMjA5NjUgQzE4MC4yMzAzOTMsMTgzLjM0MTMzNSAxODQuODYxNTM4LDE5MC45OTE4MzEgMTkwLjA5NjYyNCwxOTguMTY4OTMgQzIxMS4yMzg3NDYsMTkxLjU4ODA1MSAyMzIuNzQzMDIzLDE4MS41MzE2MTkgMjU0LjkxMTk0OSwxNjQuOTU1NzIxIEMyNjAuMjI3NzQ3LDEwOC42NjgyMDEgMjQ1LjgzMTA4Nyw1OS44NjYyNDMyIDIxNi44NTYzMzksMTYuNTk2NjAzMSBaIE04NS40NzM4NzUyLDEzNS4wOTQ4OSBDNzIuODI5MDI4MSwxMzUuMDk0ODkgNjIuNDU5MjIxNywxMjMuMjkwMTU1IDYyLjQ1OTIyMTcsMTA4LjkxNDkwMSBDNjIuNDU5MjIxNyw5NC41Mzk2NDcyIDcyLjYwNzU5NSw4Mi43MTQ1NTg3IDg1LjQ3Mzg3NTIsODIuNzE0NTU4NyBDOTguMzQwNTA2NCw4Mi43MTQ1NTg3IDEwOC43MDk5NjIsOTQuNTE4OTQyNyAxMDguNDg4NTI5LDEwOC45MTQ5MDEgQzEwOC41MDg1MzEsMTIzLjI5MDE1NSA5OC4zNDA1MDY0LDEzNS4wOTQ4OSA4NS40NzM4NzUyLDEzNS4wOTQ4OSBaIE0xNzAuNTI1MjM3LDEzNS4wOTQ4OSBDMTU3Ljg4MDM5LDEzNS4wOTQ4OSAxNDcuNTEwNTg0LDEyMy4yOTAxNTUgMTQ3LjUxMDU4NCwxMDguOTE0OTAxIEMxNDcuNTEwNTg0LDk0LjUzOTY0NzIgMTU3LjY1ODYwNiw4Mi43MTQ1NTg3IDE3MC41MjUyMzcsODIuNzE0NTU4NyBDMTgzLjM5MTUxOCw4Mi43MTQ1NTg3IDE5My43NjEzMjQsOTQuNTE4OTQyNyAxOTMuNTM5ODkxLDEwOC45MTQ5MDEgQzE5My41Mzk4OTEsMTIzLjI5MDE1NSAxODMuMzkxNTE4LDEzNS4wOTQ4OSAxNzAuNTI1MjM3LDEzNS4wOTQ4OSBaIiBmaWxsPSIjNTg2NUYyIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+"/>
+		<image width="233" height="233" id="img4" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyMzMgMjMzIj4KIDxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDI9IjUwJSIgeDE9IjUwJSIgeTI9IjEwMCUiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMTExRDJFIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzA1MTgzOSIgb2Zmc2V0PSIuMjEyNDgiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzBBMUI0OCIgb2Zmc2V0PSIuNDA2OTUiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzMkU2MiIgb2Zmc2V0PSIuNTgxMTAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzE0NEI3RSIgb2Zmc2V0PSIuNzM3NjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzNjQ5NyIgb2Zmc2V0PSIuODcyNzkiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzODdCOCIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KIDwvZGVmcz4KIDxwYXRoIGZpbGw9InVybCgjYSkiIGQ9Im00Ljg5MTEgMTUwLjAxYzE0LjM5MyA0OC4wMSA1OC45MTYgODIuOTkgMTExLjYxIDgyLjk5IDY0LjM0IDAgMTE2LjUtNTIuMTYgMTE2LjUtMTE2LjUgMC02NC4zNDEtNTIuMTYtMTE2LjUtMTE2LjUtMTE2LjUtNjEuNzQxIDAtMTEyLjI2IDQ4LjAyOS0xMTYuMjUgMTA4Ljc2IDcuNTM5MSAxMi42NiAxMC40ODEgMjAuNDkgNC42NDExIDQxLjI1eiIvPgogPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTExMC41IDg3LjMyMmMwIDAuMTk2IDAgMC4zOTIgMC4wMSAwLjU3NmwtMjguNTA4IDQxLjQxMmMtNC42MTgtMC4yMS05LjI1MiAwLjYtMTMuNjQ2IDIuNDEtMS45MzcgMC43OS0zLjc1MiAxLjc2LTUuNDU1IDIuODhsLTYyLjU5OS0yNS43N2MwLjAwMDQ5IDAtMS40NDg1IDIzLjgzIDQuNTg4IDQxLjU5bDQ0LjI1NCAxOC4yNmMyLjIyMiA5LjkzIDkuMDM0IDE4LjY0IDE5LjA4NCAyMi44MyAxNi40NDMgNi44NyAzNS40MDItMC45NiA0Mi4yNDItMTcuNDEgMS43OC00LjMgMi42MS04LjgxIDIuNDktMTMuMzFsNDAuNzktMjkuMTVjMC4zMyAwLjAxIDAuNjcgMC4wMiAxIDAuMDIgMjQuNDEgMCA0NC4yNS0xOS45IDQ0LjI1LTQ0LjMzOCAwLTI0LjQ0LTE5Ljg0LTQ0LjMyMi00NC4yNS00NC4zMjItMjQuNCAwLTQ0LjI1IDE5Ljg4Mi00NC4yNSA0NC4zMjJ6bS02Ljg0IDgzLjkxOGMtNS4yOTQgMTIuNzEtMTkuOSAxOC43NC0zMi41OTYgMTMuNDUtNS44NTctMi40NC0xMC4yNzktNi45MS0xMi44My0xMi4yNGwxNC40MDUgNS45N2M5LjM2MyAzLjkgMjAuMTA1LTAuNTQgMjMuOTk3LTkuOSAzLjkwNC05LjM3LTAuNTI1LTIwLjEzLTkuODgzLTI0LjAzbC0xNC44OTEtNi4xN2M1Ljc0Ni0yLjE4IDEyLjI3OC0yLjI2IDE4LjM4MSAwLjI4IDYuMTUzIDIuNTYgMTAuOTI3IDcuMzggMTMuNDU3IDEzLjU0czIuNTIgMTIuOTYtMC4wNCAxOS4xbTUxLjA5LTU0LjM4Yy0xNi4yNSAwLTI5LjQ4LTEzLjI1LTI5LjQ4LTI5LjUzOCAwLTE2LjI3NSAxMy4yMy0yOS41MjkgMjkuNDgtMjkuNTI5IDE2LjI2IDAgMjkuNDkgMTMuMjU0IDI5LjQ5IDI5LjUyOSAwIDE2LjI4OC0xMy4yMyAyOS41MzgtMjkuNDkgMjkuNTM4bS0yMi4wOS0yOS41ODNjMC0xMi4yNTMgOS45Mi0yMi4xOTEgMjIuMTQtMjIuMTkxIDEyLjIzIDAgMjIuMTUgOS45MzggMjIuMTUgMjIuMTkxIDAgMTIuMjU0LTkuOTIgMjIuMTgzLTIyLjE1IDIyLjE4My0xMi4yMiAwLTIyLjE0LTkuOTI5LTIyLjE0LTIyLjE4M3oiLz4KPC9zdmc+Cg=="/>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: #ffffff } 
+		.s2 { fill: #ff1414 } 
+		.s3 { fill: url(#g2) } 
+		.s4 { fill: none;stroke: #ffffff;stroke-linejoin: round;stroke-width: 4.5 } 
+		.s5 { fill: url(#g3) } 
+		.s6 { fill: url(#g4) } 
+		.s7 { fill: #000000 } 
+		.s8 { fill: url(#g5) } 
+		.s9 { fill: none;stroke: #ffffff;stroke-linejoin: round;stroke-width: 8.2 } 
+		.s10 { fill: #1ea260 } 
+		.s11 { fill: url(#g6) } 
+		.s12 { fill: #f0f0f0 } 
+		.s13 { fill: #e9e9e9 } 
+		.s14 { fill: url(#g7) } 
+		.s15 { fill: #ffcf48 } 
+		.s16 { fill: #4587f4 } 
+		.s17 { fill: #1ba261 } 
+		.s18 { fill: url(#g8) } 
+		.s19 { fill: url(#g9) } 
+		.s20 { fill: #f2f2f2 } 
+		.s21 { fill: #4889f4 } 
+		.s22 { fill: #d3d3d3 } 
+		.s23 { fill: #1ea362 } 
+		.s24 { fill: #ffde47 } 
+		.s25 { fill: #dc4b3e } 
+		.s26 { fill: #812c28 } 
+		.s27 { fill: #efefef } 
+		.s28 { fill: #e3e3e3 } 
+		.s29 { fill: #d54d40 } 
+		.s30 { fill: url(#g10) } 
+		.s31 { fill: #c33b2c } 
+		.s32 { fill: #dd4d40 } 
+		.s33 { fill: #af4a40 } 
+		.s34 { fill: #dc493c } 
+		.s35 { fill: #ffcd41 } 
+		.s36 { fill: #139f5b } 
+		.s37 { fill: url(#g11) } 
+		.s38 { fill: url(#g12) } 
+		.s39 { fill: url(#g13) } 
+		.s40 { fill: #4687f4;stroke: #ffffff;paint-order:stroke fill markers;stroke-linejoin: round;stroke-width: 6 } 
+		.s41 { fill: url(#g14) } 
+		.s42 { fill: #2971d5 } 
+		.s43 { fill: #fc1785 } 
+		.s44 { fill: #191414 } 
+		.s45 { fill: #1ed760 } 
+		.s46 { fill: #bd081c } 
+		.s47 { fill: #fffc00 } 
+		.s48 { fill: #ffffff;stroke: #000000;stroke-linejoin: round;stroke-width: 2 } 
+		.s49 { fill: #1da1f2 } 
+		.s50 { fill: url(#g15) } 
+		.s51 { fill: #fbfeff } 
+		.s52 { fill: #e94f3c } 
+		.s53 { fill: #f9524d } 
+		.s54 { fill: url(#g16) } 
+		.s55 { fill: #ff4500 } 
+		.s56 { fill: #00aff0 } 
+		.s57 { fill: url(#g17) } 
+		.s58 { fill: url(#g18) } 
+		.s59 { fill: url(#g19) } 
+		.s60 { fill: #139500 } 
+		.s61 { fill: #f49000 } 
+		.s62 { fill: #ffc200 } 
+		.s63 { fill: #fff4ba;stroke: #fffce7;stroke-linejoin: round;stroke-width: .5 } 
+		.s64 { fill: #3e3e3e } 
+		.s65 { fill: url(#g20) } 
+		.s66 { fill: url(#g21) } 
+		.s67 { fill: url(#g22) } 
+		.s68 { fill: url(#g23) } 
+		.s69 { fill: url(#g24) } 
+		.s70 { fill: url(#g25) } 
+		.s71 { fill: url(#g26) } 
+		.s72 { fill: url(#g27) } 
+		.s73 { fill: #103b49 } 
+		.s74 { fill: url(#g28) } 
+		.s75 { fill: url(#g29) } 
+		.s76 { fill: url(#g30) } 
+		.s77 { fill: #ff5a5f } 
+	</style>
+	<g id="Clip-Path: Icons">
+		<g id="Icons">
+			<g id="Apple Apps">
+				<g id="Safari">
+					<circle id="Oval" class="s0" cx="3900" cy="60" r="52"/>
+					<path id="Combined Shape" class="s1" d="m3899.2 12.7c0-0.4 0.3-0.7 0.7-0.7 0.3 0 0.6 0.3 0.6 0.7v8.5c0 0.4-0.3 0.7-0.6 0.7-0.4 0-0.7-0.3-0.7-0.7zm0 85.9c0-0.4 0.3-0.6 0.7-0.6 0.4 0 0.7 0.2 0.7 0.6v8.6c0 0.4-0.3 0.7-0.7 0.7-0.4 0-0.7-0.3-0.7-0.7zm9.2-85.1c0.1-0.4 0.4-0.6 0.8-0.5 0.4 0 0.6 0.4 0.5 0.7l-1.6 8.5c-0.1 0.3-0.4 0.6-0.8 0.5-0.3-0.1-0.6-0.4-0.5-0.8zm8.8 2.6c0.2-0.4 0.6-0.5 0.9-0.4 0.3 0.2 0.5 0.5 0.4 0.9l-3.2 7.9c-0.2 0.4-0.6 0.5-0.9 0.4-0.3-0.1-0.5-0.5-0.4-0.9zm8.3 4.3c0.2-0.3 0.6-0.4 0.9-0.2 0.3 0.2 0.4 0.6 0.2 0.9l-4.7 7.2c-0.2 0.3-0.6 0.4-0.9 0.2-0.3-0.2-0.4-0.6-0.2-0.9zm7.3 5.7c0.2-0.3 0.7-0.3 0.9 0 0.3 0.2 0.3 0.7 0 0.9l-5.9 6.2c-0.3 0.3-0.7 0.3-0.9 0-0.3-0.2-0.3-0.7-0.1-0.9zm6 7.1c0.3-0.2 0.7-0.1 0.9 0.2 0.2 0.3 0.1 0.7-0.2 0.9l-7.1 4.8c-0.3 0.2-0.7 0.1-0.9-0.2-0.2-0.3-0.2-0.7 0.2-0.9zm4.4 8.1c0.4-0.2 0.8 0 0.9 0.3 0.2 0.3 0 0.7-0.3 0.9l-7.9 3.3c-0.4 0.2-0.8 0-0.9-0.3q-0.1-0.6 0.3-0.9zm2.9 8.9c0.3-0.1 0.7 0.2 0.7 0.5 0.1 0.4-0.1 0.7-0.5 0.8l-8.4 1.6c-0.4 0.1-0.7-0.1-0.8-0.5-0.1-0.3 0.2-0.7 0.5-0.8zm-39.2 47.9c-0.1-0.3 0.1-0.7 0.5-0.7 0.3-0.1 0.7 0.1 0.8 0.5l1.6 8.4c0.1 0.4-0.2 0.7-0.5 0.8-0.4 0.1-0.7-0.2-0.8-0.5zm7.3-2.1c-0.2-0.4 0-0.8 0.3-0.9 0.4-0.1 0.8 0 0.9 0.4l3.2 7.9c0.2 0.4 0 0.8-0.3 0.9-0.4 0.1-0.8 0-0.9-0.4zm6.8-3.5c-0.2-0.3-0.1-0.7 0.2-0.9 0.3-0.2 0.7-0.1 0.9 0.2l4.7 7.2c0.2 0.3 0.1 0.7-0.2 0.9-0.3 0.2-0.7 0.1-0.9-0.2zm6-4.7c-0.3-0.2-0.3-0.6 0-0.9 0.2-0.2 0.7-0.2 0.9 0l6 6.2c0.2 0.3 0.2 0.7 0 0.9-0.3 0.3-0.7 0.3-1 0zm4.8-5.7c-0.3-0.2-0.4-0.6-0.2-0.9 0.2-0.3 0.6-0.4 0.9-0.2l7.2 4.8c0.3 0.2 0.3 0.6 0.1 0.9-0.2 0.3-0.6 0.4-0.9 0.2zm3.7-6.6c-0.3-0.2-0.5-0.6-0.3-0.9 0.1-0.3 0.5-0.5 0.8-0.4l7.9 3.4c0.4 0.1 0.5 0.5 0.4 0.9-0.2 0.3-0.5 0.5-0.9 0.3zm2.3-7.2c-0.3 0-0.6-0.4-0.5-0.7 0.1-0.4 0.4-0.6 0.8-0.6l8.4 1.7c0.4 0 0.6 0.4 0.5 0.7-0.1 0.4-0.4 0.6-0.8 0.6zm-46.3 38.1c-0.1 0.3-0.4 0.6-0.8 0.5-0.3-0.1-0.6-0.4-0.5-0.8l1.6-8.4c0.1-0.4 0.4-0.6 0.8-0.5 0.4 0 0.6 0.4 0.5 0.7zm-8.8-2.5c-0.2 0.3-0.6 0.5-0.9 0.3-0.3-0.1-0.5-0.5-0.4-0.8l3.3-8c0.1-0.3 0.5-0.5 0.8-0.3 0.4 0.1 0.5 0.5 0.4 0.8zm-8.3-4.2c-0.2 0.3-0.6 0.4-0.9 0.2-0.3-0.2-0.4-0.6-0.2-0.9l4.7-7.2c0.2-0.4 0.6-0.4 0.9-0.2 0.3 0.2 0.4 0.6 0.2 0.9zm-7.3-5.7c-0.2 0.2-0.6 0.2-0.9 0-0.3-0.3-0.3-0.7 0-1l5.9-6.1c0.3-0.3 0.7-0.3 1 0 0.2 0.2 0.2 0.6 0 0.9zm-5.9-7.1c-0.3 0.2-0.8 0.1-1-0.2-0.2-0.3-0.1-0.7 0.2-0.9l7.1-4.8c0.3-0.2 0.7-0.1 0.9 0.2 0.3 0.3 0.2 0.7-0.1 0.9zm-4.5-8.1c-0.4 0.2-0.8 0-0.9-0.3-0.1-0.4 0-0.8 0.4-0.9l7.9-3.4c0.3-0.1 0.7 0.1 0.8 0.4 0.2 0.3 0 0.7-0.3 0.9zm-2.8-8.9c-0.4 0-0.7-0.2-0.8-0.6-0.1-0.3 0.1-0.7 0.5-0.7l8.4-1.7c0.4 0 0.7 0.2 0.8 0.6 0.1 0.3-0.2 0.7-0.5 0.7zm93.4-10.4c0.4 0 0.6 0.3 0.6 0.6 0 0.4-0.2 0.7-0.6 0.7h-8.6c-0.4 0-0.7-0.3-0.7-0.7 0-0.3 0.3-0.6 0.7-0.6zm-54.1-37.3c0 0.3-0.2 0.7-0.6 0.7-0.3 0.1-0.7-0.1-0.7-0.5l-1.7-8.4c0-0.4 0.2-0.7 0.6-0.8 0.3-0.1 0.7 0.2 0.7 0.5zm-7.2 2.1c0.1 0.4-0.1 0.8-0.4 0.9-0.3 0.1-0.7 0-0.9-0.4l-3.2-7.9c-0.1-0.4 0-0.7 0.4-0.9 0.3-0.1 0.7 0 0.8 0.4zm-6.7 3.5c0.2 0.3 0.1 0.7-0.2 0.9-0.3 0.2-0.7 0.1-0.9-0.2l-4.7-7.2c-0.2-0.3-0.1-0.7 0.2-0.9 0.3-0.2 0.7-0.1 0.9 0.2zm-6 4.7c0.2 0.2 0.2 0.6 0 0.9-0.3 0.2-0.7 0.2-1 0l-5.9-6.2c-0.3-0.3-0.3-0.7 0-0.9 0.2-0.3 0.7-0.3 0.9 0zm-4.8 5.7c0.3 0.2 0.4 0.6 0.2 0.9-0.2 0.3-0.6 0.4-0.9 0.2l-7.1-4.8c-0.3-0.2-0.4-0.6-0.2-0.9 0.2-0.3 0.6-0.4 0.9-0.2zm-3.7 6.6c0.3 0.2 0.5 0.6 0.4 0.9-0.2 0.3-0.6 0.5-0.9 0.4l-7.9-3.4c-0.3-0.1-0.5-0.5-0.4-0.9 0.2-0.3 0.6-0.4 0.9-0.3zm-2.3 7.2c0.4 0 0.6 0.4 0.5 0.7 0 0.4-0.4 0.6-0.7 0.6l-8.5-1.7c-0.3 0-0.5-0.4-0.5-0.7 0.1-0.4 0.4-0.6 0.8-0.6zm-0.8 7.5c0.3 0 0.6 0.3 0.6 0.7 0 0.4-0.3 0.7-0.6 0.7h-8.6c-0.4 0-0.7-0.3-0.7-0.7 0-0.4 0.3-0.7 0.7-0.7zm42.5-46.3c0.1-0.4 0.4-0.6 0.8-0.6 0.3 0 0.6 0.4 0.6 0.7l-0.4 3.8c0 0.3-0.3 0.6-0.7 0.6-0.4-0.1-0.6-0.4-0.6-0.8zm9.1 1.7c0.1-0.4 0.5-0.6 0.8-0.5 0.4 0.1 0.6 0.5 0.5 0.9l-1 3.6c-0.1 0.3-0.5 0.5-0.9 0.4-0.3-0.1-0.5-0.5-0.4-0.8zm8.6 3.5c0.1-0.4 0.5-0.5 0.9-0.3 0.3 0.1 0.4 0.5 0.2 0.9l-1.7 3.3c-0.1 0.3-0.5 0.5-0.8 0.3-0.4-0.2-0.5-0.6-0.3-0.9zm7.7 5c0.2-0.3 0.6-0.3 0.9-0.1 0.3 0.2 0.4 0.6 0.1 0.9l-2.3 3c-0.2 0.3-0.6 0.3-0.9 0.1-0.3-0.2-0.3-0.6-0.1-0.9zm6.6 6.4c0.3-0.3 0.7-0.2 1 0 0.2 0.3 0.2 0.7-0.1 1l-2.8 2.4c-0.3 0.3-0.7 0.2-1-0.1-0.2-0.2-0.2-0.6 0.1-0.9zm5.3 7.6c0.3-0.2 0.8-0.1 0.9 0.2 0.2 0.3 0.1 0.7-0.2 0.9l-3.2 1.9c-0.4 0.2-0.8 0-0.9-0.3-0.2-0.3-0.1-0.7 0.2-0.9zm3.6 8.5c0.4-0.1 0.7 0.1 0.9 0.4 0.1 0.4-0.1 0.8-0.4 0.9l-3.6 1.2c-0.3 0.1-0.7-0.1-0.8-0.4-0.1-0.4 0-0.7 0.4-0.9zm1.9 9.1c0.4-0.1 0.7 0.2 0.8 0.6 0 0.3-0.2 0.7-0.6 0.7l-3.7 0.5c-0.4 0.1-0.7-0.2-0.7-0.5-0.1-0.4 0.2-0.7 0.5-0.8zm-43.3 48.6c0-0.4 0.3-0.7 0.6-0.7 0.4 0 0.7 0.2 0.8 0.6l0.3 3.7c0 0.4-0.2 0.7-0.6 0.7-0.4 0.1-0.7-0.2-0.7-0.6zm8.4-1.5c-0.1-0.3 0.1-0.7 0.4-0.8 0.4-0.1 0.7 0.1 0.8 0.4l1.1 3.6c0.1 0.4-0.1 0.8-0.5 0.9-0.3 0.1-0.7-0.1-0.8-0.5zm7.9-3.2c-0.1-0.3 0-0.7 0.3-0.9 0.3-0.2 0.7 0 0.9 0.3l1.7 3.3c0.2 0.4 0 0.7-0.3 0.9-0.3 0.2-0.7 0.1-0.9-0.3zm7.1-4.6c-0.2-0.3-0.1-0.7 0.2-0.9 0.3-0.3 0.7-0.2 0.9 0.1l2.3 2.9c0.2 0.3 0.2 0.7-0.1 1-0.3 0.2-0.7 0.1-0.9-0.2zm6.1-5.9c-0.3-0.2-0.3-0.6-0.1-0.9 0.2-0.3 0.6-0.3 0.9-0.1l2.8 2.5c0.3 0.2 0.4 0.7 0.1 0.9-0.2 0.3-0.6 0.3-0.9 0.1zm4.9-7c-0.3-0.1-0.4-0.6-0.2-0.9 0.1-0.3 0.5-0.4 0.9-0.2l3.2 1.9c0.3 0.1 0.4 0.5 0.2 0.9-0.1 0.3-0.6 0.4-0.9 0.2zm3.4-7.8c-0.4-0.2-0.6-0.5-0.4-0.9 0.1-0.3 0.4-0.5 0.8-0.4l3.5 1.2c0.4 0.2 0.6 0.5 0.4 0.9-0.1 0.3-0.5 0.5-0.8 0.4zm1.8-8.4c-0.4 0-0.6-0.4-0.6-0.7 0.1-0.4 0.4-0.6 0.8-0.6l3.7 0.5c0.3 0.1 0.6 0.4 0.5 0.8 0 0.3-0.4 0.6-0.7 0.5zm-47.1 42.2c0 0.4-0.4 0.6-0.7 0.6-0.4 0-0.7-0.3-0.6-0.7l0.3-3.7c0-0.4 0.3-0.7 0.7-0.6 0.4 0 0.6 0.3 0.6 0.7zm-9.1-1.7c-0.1 0.4-0.5 0.6-0.8 0.5-0.4-0.1-0.6-0.5-0.5-0.8l1.1-3.6c0.1-0.4 0.4-0.6 0.8-0.5 0.3 0.1 0.5 0.5 0.4 0.8zm-8.5-3.5c-0.2 0.4-0.6 0.5-0.9 0.3-0.4-0.1-0.5-0.5-0.3-0.9l1.7-3.3c0.1-0.3 0.5-0.4 0.9-0.3 0.3 0.2 0.4 0.6 0.3 0.9zm-7.8-5c-0.2 0.3-0.6 0.3-0.9 0.1-0.3-0.2-0.3-0.6-0.1-0.9l2.3-3c0.2-0.3 0.6-0.3 0.9-0.1 0.3 0.2 0.3 0.7 0.1 0.9zm-6.6-6.3c-0.3 0.2-0.7 0.2-0.9-0.1-0.3-0.3-0.2-0.7 0-0.9l2.9-2.5c0.2-0.2 0.6-0.2 0.9 0.1 0.2 0.2 0.2 0.7-0.1 0.9zm-5.3-7.5c-0.3 0.1-0.7 0-0.9-0.3-0.2-0.3-0.1-0.7 0.2-0.9l3.3-1.9c0.3-0.1 0.7 0 0.9 0.3 0.2 0.3 0 0.7-0.3 0.9zm-3.6-8.5c-0.3 0.1-0.7-0.1-0.8-0.4-0.2-0.4 0-0.7 0.4-0.9l3.5-1.2c0.4-0.1 0.7 0.1 0.8 0.4 0.2 0.4 0 0.8-0.4 0.9zm-1.9-9.1c-0.4 0.1-0.7-0.2-0.7-0.5-0.1-0.4 0.2-0.7 0.5-0.8l3.7-0.5c0.4-0.1 0.7 0.2 0.8 0.6 0 0.3-0.2 0.7-0.6 0.7zm43.3-48.6c0 0.4-0.3 0.7-0.6 0.7-0.4 0.1-0.7-0.2-0.7-0.6l-0.4-3.7c0-0.4 0.3-0.7 0.6-0.7 0.4-0.1 0.7 0.2 0.8 0.6zm-8.5 1.5c0.1 0.4-0.1 0.7-0.4 0.8-0.4 0.1-0.7-0.1-0.8-0.4l-1.1-3.6c-0.1-0.4 0.1-0.7 0.5-0.8 0.4-0.1 0.7 0.1 0.8 0.4zm-7.9 3.2c0.2 0.3 0 0.7-0.3 0.9-0.3 0.2-0.7 0-0.9-0.3l-1.7-3.3c-0.1-0.3 0-0.7 0.3-0.9 0.3-0.2 0.7 0 0.9 0.3zm-7.1 4.6c0.2 0.3 0.1 0.7-0.1 1-0.3 0.2-0.7 0.1-1-0.2l-2.3-2.9c-0.2-0.3-0.1-0.7 0.1-0.9 0.3-0.3 0.7-0.2 1 0.1zm-6.1 5.9c0.2 0.2 0.3 0.6 0 0.9-0.2 0.3-0.6 0.3-0.9 0.1l-2.8-2.5c-0.3-0.2-0.3-0.6-0.1-0.9 0.3-0.3 0.7-0.3 0.9-0.1zm-4.9 7c0.3 0.2 0.5 0.6 0.3 0.9-0.2 0.3-0.6 0.4-0.9 0.2l-3.3-1.8c-0.3-0.2-0.4-0.6-0.2-0.9 0.2-0.4 0.6-0.5 0.9-0.3zm-3.3 7.9c0.3 0.1 0.5 0.4 0.4 0.8-0.2 0.3-0.5 0.5-0.9 0.4l-3.5-1.2c-0.4-0.1-0.5-0.5-0.4-0.9 0.1-0.3 0.5-0.5 0.8-0.4zm-1.7 8.4c0.3 0 0.6 0.4 0.5 0.7 0 0.4-0.4 0.6-0.7 0.6l-3.7-0.5c-0.4-0.1-0.6-0.4-0.6-0.8 0.1-0.3 0.4-0.6 0.7-0.5z"/>
+					<g id="Indicator">
+						<path id="Path 123" class="s1" d="m3865.6 95.1l29.4-40 10 10z"/>
+						<path id="Path 123" class="s2" d="m3934.5 25l-29.5 40.1-10-10z"/>
+					</g>
+				</g>
+				<g id="iTunes">
+					<path id="App Icon Shape" class="s3" d="m3811.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<circle id="Oval 14" class="s4" cx="3780" cy="60" r="52"/>
+						<path id="Music" class="s1" d="m3768.9 48.3v32.8c0 6.1-5.3 7.9-10.1 7.9-4.7 0-8.4-2.8-8.4-7 0-3.1 2.1-5.8 5.1-7 1-0.4 2.5-0.9 4.6-1 5.1-0.3 4.9-5 4.9-5v-20.4-12.8c0-1.3 0.8-2.4 2.1-2.7l29.7-6c1.9-0.4 3.4 0.8 3.4 2.7v11.7 33.4c0 6.1-5.2 7.9-10 7.9-4.8 0-8.5-2.9-8.5-7 0-3.1 2.1-5.8 5.1-7 1.1-0.5 2.6-0.9 4.6-1 5.1-0.3 4.9-5.1 4.9-5.1v-20.4z"/>
+					</g>
+				</g>
+				<g id="App Store">
+					<path id="App Icon Shape" class="s5" d="m3691.4 0c17.4 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.2 28.6-28.6 28.6h-62.8c-17.3 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.3-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<circle id="Oval 14" class="s4" cx="3660" cy="60" r="52"/>
+						<path id="Icon" class="s1" d="m3633.6 72.3l6.3 4.3-9 8.2c0 0-0.7 0.6-0.5-0.4zm16-27.5l6.2 3.9-15.1 26.6-6.5-4.4zm3.1-5.2c1.4-2.1 4.5 0.5 4.5 0.5 2.8 2 1.3 3.7 1.3 3.7l-2.3 3.9-6.1-3.9zm27 31.9l3.4-2c0 0 1.2-0.8 3 1 1.7 1.8 4.5 8.5 1.3 13.9 0 0-0.8 1.4-1.2-0.5 0 0 0.5-2.3-4.3-4.8 0 0-4.5-3.3-3-7zm-5.8-6.6l6.1-3.6 3.7 6.3-6.3 3.8zm-17.6-30.8c-1.5-2.6 0.8-3.6 0.8-3.6l1.8-1.1c2.5-1.5 3.9 1.2 3.9 1.2l16.7 29.6-6.2 3.5zm-28.2 22.6h13.5l-4.1 7.3h-9.4zm24.2-0.1h15.5l4.2 7.3h-23.7zm26.8 0h13.2v7.4h-9.2z"/>
+					</g>
+				</g>
+			</g>
+			<g id="Instagram Apps">
+				<g id="Instagram">
+					<path id="Background" class="s6" d="m3571.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Yellow Flare">
+						<path id="Mask" class="s7" d="m3571.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp1)">
+							<g id="Mask by Mask">
+								<circle id="Oval 3" class="s8" cx="3516.2" cy="90.9" r="84.6"/>
+							</g>
+						</g>
+					</g>
+					<g id="Icon">
+						<rect id="Camera Frame" class="s9" x="3499.9" y="20.4" width="80.4" height="79.9" rx="21.3"></rect>
+						<circle id="Oval 1" class="s9" cx="3540.2" cy="60.7" r="19.2"/>
+						<circle id="Oval 2" class="s1" cx="3563.8" cy="36.8" r="5.6"/>
+					</g>
+				</g>
+			</g>
+			<g id="Google Apps">
+				<g id="Hangouts">
+					<g id="Icon">
+						<path id="Mask" class="s10" d="m3419.5 95c-23.2 0-41.5-18.4-41.5-41 0-22.6 18.8-41 42-41 21.9 0 39.9 16.4 41.8 37.2q0.6 2.8 0.2 6.4-0.1 0.6-0.2 1.1c-0.4 4.5-1.3 9.8-3 13.8-10.4 26.6-38.8 38-38.8 38v-14.5c-0.1 0-0.4 0-0.5 0z"/>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp2)">
+							<g id="Mask by Mask">
+								<path id="Shadow" class="s11" d="m3417 43l13.6 12.6 10.5-12.6 35.5 34.6-30.7 31.7-46.9-48.3z"/>
+								<path id="&quot;" fill-rule="evenodd" class="s12" d="m3409 61h-10v-18h18c0 0.3 0 18.7 0 19 0 5-3.6 9-8 9zm24 10c4.4 0 8-4 8-9q0-0.5 0-1v-18h-18v18h10z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<g id="YouTube">
+					<g id="Icon">
+						<path id="Shadow" class="s13" d="m3318.7 55.4l-2.7 8.6-25-17z"/>
+						<path id="Play Button" fill-rule="evenodd" class="s14" d="m3300.4 28c21.5 0 31.7 1 31.7 1 0 0 7.8 0.3 10.8 6.1 0 0 3.1 4.3 3.1 24.9 0 0 0.2 12.8-1.3 19.6-1.4 6.8-4.6 8.7-4.6 8.7 0 0-2.1 2-6.6 2.6-4.5 0.5-19.1 1.1-33.1 1.1 0 0-25.5 0-34-1.4-8.6-1.4-9.8-9.4-9.8-9.4 0 0-3.6-20.3 0-42.3 0 0 1-8.8 11.2-9.9 0 0 11.2-1 32.6-1zm-9.4 19v25l25-12.5z"/>
+					</g>
+				</g>
+				<g id="Drive">
+					<g id="Icon">
+						<path id="Yellow" class="s15" d="m3165 21h30l29 52h-30z"/>
+						<path id="Blue" class="s16" d="m3151.1 97c4.4-8.1 14-24 14-24h59l-15 26h-58c0 0-0.3-1.4 0-2z"/>
+						<path id="Green" class="s17" d="m3165 21l15 27-29 51-15-26z"/>
+						<path id="Blue Shadow" class="s18" d="m3165.8 73.1l12.6 24.9h-26.8z"/>
+						<path id="Green Shadow" class="s19" d="m3180 48l-6.3 11-8.7-38z"/>
+					</g>
+				</g>
+				<g id="Google Maps">
+					<path id="App Icon Shape" class="s20" d="m3091.4 0c17.4 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.2 28.6-28.6 28.6h-62.8c-17.3 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.3-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<g id="Areas">
+							<path id="Mask" class="s7" d="m3091.4 0c17.4 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.2 28.6-28.6 28.6h-62.8c-17.3 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.3-28.6 28.6-28.6z"/>
+							<g id="Clip-Path: Mask by Mask" clip-path="url(#cp3)">
+								<g id="Mask by Mask">
+									<path id="Blue" class="s21" d="m3006.2 124.3l53.9-54 53.9 54z"/>
+									<path id="Gray" class="s22" d="m3068.8 61.6l53.8-53.9v107.9z"/>
+									<path id="Green" class="s23" d="m2993.4-3.8h121.3l-121.3 122.8z"/>
+									<path id="Yellow" class="s24" d="m3113.8-2.8l10.1 9.3-113.6 113.6-9.1-9z"/>
+									<g id="Pin">
+										<path id="Page 1" class="s25" d="m3091.8 83.8c-0.8-10.5-4-21.7-15.7-35.8-11.7-14.1-8-27.5-8-27.5 0 0 3.4-20.4 25.8-20.5 9.9 0 17.4 5.1 21.1 10.3 4.7 6.4 5.1 13.1 5.1 13.1 0 0 1.7 13.3-10.3 27-12.1 13.6-14 33.4-14 33.4-1.9 5.2-4 0-4 0z"/>
+										<circle id="Oval 60" class="s26" cx="3093.9" cy="26.2" r="9.5"/>
+									</g>
+								</g>
+							</g>
+						</g>
+						<path id="Google Icon" class="s1" d="m3024.7 14.9c3.4-1.2 7.3-1.2 10.7 0.1 1.9 0.7 3.7 1.8 5.2 3.2-0.5 0.5-1.1 1-1.6 1.5q-1.4 1.5-2.9 3c-1-0.9-2.2-1.7-3.5-2-1.5-0.5-3.1-0.6-4.6-0.2-1.9 0.4-3.5 1.3-4.8 2.6-1.1 1.1-1.9 2.4-2.3 3.8-0.7 2-0.7 4.2 0 6.2 0.6 2 1.9 3.7 3.6 4.9 1.1 0.8 2.3 1.3 3.6 1.6 1.2 0.2 2.5 0.2 3.8 0 1.2-0.2 2.5-0.7 3.5-1.4 1.7-1.1 2.9-3 3.2-5q-4.4 0-8.7 0 0-3.1 0-6.2 7.5 0 15 0c0.5 2.8 0.4 5.8-0.4 8.5-0.7 2.5-2.1 4.9-4 6.6-1.9 1.7-4.1 2.9-6.6 3.4-2.6 0.7-5.5 0.7-8.1 0-2.2-0.6-4.1-1.6-5.8-3-1.8-1.4-3.3-3.2-4.4-5.3-1.6-3.2-2.1-6.9-1.4-10.4q0.5-2.1 1.4-4c1.9-3.7 5.2-6.6 9.1-7.9z"/>
+					</g>
+				</g>
+				<g id="Gmail">
+					<g id="Icon">
+						<rect id="Mask" class="s27" x="2896" y="28" width="88" height="64" rx="5"></rect>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp4)">
+							<g id="Mask by Mask">
+								<path id="Mid Shadow" class="s28" d="m2950.1 60.8l-43.9 31.1v-50.9z"/>
+								<path id="Left Bar" class="s29" d="m2906 92h-5c-2.8 0-5-2.2-5-5v-53.6c0-2.7 1.7 1.5 4.5 1.5l5.5 4.4z"/>
+								<path id="Big Shadow" class="s30" d="m2900.9 31.1c0 0 27.2 29.1 40.2 28.2 8.6-0.6 19.4-9.1 30.1-17.1 11.9-8.9 23.3-17.5 23.3-17.5 0 0 0 6.8 0 7 0.1 26.4 0.3 72.9 0.3 72.9l-31.7-0.4-65.4-67c0 0-0.2-3.2 0.2-5.8 0.3-2.7 0.1-0.9 0.1-0.9z"/>
+								<path id="Right Bar" class="s31" d="m2974 37.2c0 0 0.1 0.8 0 0.8-1.8 0 4.5-3.5 4.5-3.5 2.8 0 5.5-3.3 5.5-0.5v53c0 2.8-2.2 5-5 5h-5z"/>
+								<path id="Top Shadow" class="s32" d="m2974.7 29.3c3.3-1.9 6.7-1.8 8.4 0.9l0.3 0.5c1.2 2.5 0.6 5.4-1.9 7.2l-41.5 30-41.6-30.1c-2.5-1.8-2.9-5.1-1.8-7.1l0.2-0.4c1.6-2.6 5.2-3 7.7-1.3l35.5 25.2z"/>
+								<path id="Small Shadow" class="s33" d="m2897.9 33.8c0.7 0.5 1.6 1.1 2.6 1.1l5.5 4.4v6.5l-8.5-8.7c0 0 0.2-1.5 0.4-3.3z"/>
+								<path id="Top" class="s32" d="m2974.7 29.3c3.3-1.9 6.7-1.8 8.4 0.9l0.3 0.5c1.2 2.5 0.6 5.4-1.9 7.2l-41.5 30-41.6-30.1c-2.5-1.8-2.9-5.1-1.8-7.1l0.2-0.4c1.6-2.6 5.2-3 7.7-1.3l35.5 25.2z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<g id="Chrome">
+					<g id="Icon">
+						<circle id="Mask" class="s7" cx="2820" cy="60" r="44"/>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp5)">
+							<g id="Mask by Mask">
+								<path id="Red" class="s34" d="m2825.1 5.5l52.1 34.6-57.4-0.1-16.5 31-23.9-41.6z"/>
+								<path id="Yellow" class="s35" d="m2866.7 87.3l-56.5 33.5 29.3-65.1c0 0-4.1-7.9-9.3-12.2-2.7-2.2-10.5-3.5-10.5-3.5h50.4z"/>
+								<path id="Green" class="s36" d="m2772.2 88.7l7.2-59.3 24.1 41.7 34-1.4-26.9 46.9z"/>
+								<path id="Green Shadow" class="s37" d="m2837.3 70.1l-19.5 33.9 6.9-28.7z"/>
+								<path id="Red Shadwo" class="s38" d="m2783.1 35.9l18.1 18.5 0.5 13.7z"/>
+								<path id="Yellow Shadow" class="s39" d="m2819.9 40h39.3l-32.3 8.8z"/>
+								<circle id="Blue" class="s40" cx="2820" cy="60" r="17"/>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g id="Facebook Apps">
+				<g id="Messenger">
+					<path id="Icon" fill-rule="evenodd" class="s41" d="m2654 59c0-23.7 20.6-43 46-43 25.4 0 46 19.3 46 43 0 23.7-20.6 43-46 43-4.8 0-9.5-0.7-13.9-2l-15.1 9.3v-16.9c-10.4-7.9-17-19.9-17-33.4zm16.8 14.4l22.1-12.5 12 13 24.6-26.9-22.4 13.4-11.8-13.4z"/>
+				</g>
+			</g>
+			<g id="Photo &amp; Video Apps">
+				<g id="Flickr">
+					<g id="Icon">
+						<circle id="Blue" class="s42" cx="2556" cy="60" r="20"/>
+						<circle id="Pink" class="s43" cx="2604" cy="60" r="20"/>
+					</g>
+				</g>
+			</g>
+			<g id="Music Apps">
+				<g id="Spotify">
+					<path id="App Icon Shape" class="s44" d="m2491.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<path id="Icon" fill-rule="evenodd" class="s45" d="m2412.9 60.4c0-26.2 21.3-47.5 47.5-47.5 26.3 0 47.5 21.3 47.5 47.5 0 26.2-21.2 47.5-47.5 47.5-26.2 0-47.5-21.3-47.5-47.5zm82.4-9.8c0-1-0.7-2.3-2.1-3.2q-0.8-0.5-1.7-0.9c-9.9-5.3-20.6-7.5-31.7-8.3-5.1-0.3-10.1-0.2-15.2 0.2-4.6 0.5-9.1 1.2-13.5 2.5-2.6 0.8-4 3.2-3.3 5.6 0.8 2.4 3.1 3.7 5.7 3 12.2-3.4 24.4-3.3 36.7-1 6.5 1.2 12.7 3.2 18.5 6.6 3 1.6 6.6-0.5 6.6-4.5zm-42.8 3.7c-3.4 0-6.8 0.3-10.2 0.7q-4.4 0.7-8.7 2c-2.1 0.6-3.2 2.6-2.6 4.6 0.5 2 2.5 3.1 4.6 2.5 7.8-2.3 15.8-2.8 23.9-2 8.3 0.9 16.2 3.2 23.4 7.5 1.9 1.1 4 0.6 5.1-1.2 1.1-1.8 0.6-4-1.3-5.1q-2.1-1.3-4.3-2.4c-9.5-4.6-19.5-6.5-29.9-6.6zm1 15.4c-6.1-0.1-9.4 0.1-17.9 2-1.7 0.4-2.8 1.9-2.5 3.5 0.3 1.7 1.8 2.7 3.6 2.4q4.3-0.9 8.6-1.4c6.1-0.6 12.1-0.5 18.1 0.7 5.2 1.1 10.2 3.1 14.8 5.9 1.3 0.8 2.6 0.7 3.6-0.3 1.6-1.4 1.2-3.6-0.7-4.8-8.5-5.3-17.8-7.8-27.6-8z"/>
+				</g>
+				<g id="Pinterest">
+					<g id="Icon">
+						<circle id="Oval" class="s46" cx="2340" cy="60" r="50"/>
+						<path id="Icon" class="s1" d="m2322.6 89l4.9-20.7c0 0 0.5-2.5-0.8-4.7 0 0-2.8-7.1 2.8-13.1 0 0 4.6-5.2 10.5-1.3 0 0 3.4 2.6 2 7.6l-4 12.5c0 0-2.4 9.5 6.6 10.4 0 0 9.6 1.2 14.2-11.7 4.6-12.9-0.8-21.2-0.8-21.2 0 0-6.9-12-22.4-9.5-15.6 2.5-17.6 17.4-17.6 17.4 0 0-1.1 9.1 3.8 15.8l-2.4 8c0 0-11.9-7.7-11.4-21.3 0 0 0.5-22.9 23.9-28.4 0 0 21.1-5.3 33.6 11.7 7 9.5 6.5 19.8 5 27.5-1.5 7.7-7.2 12.6-7.2 12.6 0 0-15.3 16.2-28.6 1.9l-2.8 10.9c0 0-3.4 11.9-7.9 14.9l-2.1-0.5c0 0-1-13.2 0.7-18.8z"/>
+					</g>
+				</g>
+			</g>
+			<g id="Social Apps">
+				<g id="Snapchat">
+					<path id="App Icon Shape" class="s47" d="m2251.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<path id="Icon" class="s48" d="m2241.5 29.4c0 0 2.4 4 2.9 8.5 0 0 0.5 2.3-0.1 14.1 0 0-0.2 1.1 0.6 1 0 0 0.9 0.2 4.4-1 0 0 1.4-0.5 2.7-0.4 0.7 0.1 1.2 0.2 2.3 0.9 1.1 0.7 1.5 1.8 1.5 2.7 0.1 1-0.3 1.9-0.3 1.9 0 0-1.1 2.6-6.5 3.7 0 0-5.6 1.4-3.8 4.5 0 0 1.5 4.5 5.2 8.6 2.9 3.2 6.8 6.3 11.7 7.2 0 0 2.6 0.3 2.9 2.2 0.2 2-0.9 2.7-0.9 2.7 0 0-2.7 2.4-11.2 3.5l-0.9 3.6c0 0-0.5 3.1-5.2 1.9 0 0-7.2-1.8-12 1.7-4.7 3.6-7.5 4.8-7.5 4.8 0 0-6.8 3.2-14.5 0 0 0-2.9-1.2-7.3-4.5 0 0-3-2.3-6.8-2.4-3.9-0.1-6 0.5-6 0.5 0 0-4 1.2-4.6-1.7l-0.9-3.9c0 0-10.2-0.9-11.9-4.9 0 0-1.5-2.5 2.4-3.5 0 0 7.5-0.7 14.2-10.1 0 0 2.5-3.3 3.3-7 0 0 0.5-2.1-5.6-3.7-6.1-1.5-5.4-5.3-5.4-5.3 0 0 0.2-2.9 3.9-3.4 0 0 1.7 0 3.7 0.8 1.1 0.4 2.6 0.6 3.4 0.6 0.7 0 0.5-1 0.5-1l-0.4-8.2c0 0-1.5-14.1 9.9-21.6 0 0 5.7-4.2 15-4.2 0 0 14.7-0.5 21.3 11.4z"/>
+				</g>
+				<g id="Twitter">
+					<path id="App Icon Shape" class="s49" d="m2131.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<path id="Icon" class="s1" d="m2066.7 30.8c0 0 13.6 16.9 34.3 18 0 0-4.2-11.3 8.5-19 0 0 10.2-6 20.2 3.8 0 0 4.4-0.2 9.8-4.2 0 0 0.8 3.7-6.2 9.5 0 0 3.9-0.3 8.4-3.2 0 0-0.9 5-8.1 8.7 0 0 2.2 39.7-36.6 48.4 0 0-20.5 4.7-35-6.7 0 0 15.3 1.6 23.5-6.9 0 0-10.2 0.9-15.3-11.1 0 0 5.1 0.9 7.2-0.8 0 0-10.8 0.1-13.2-16.1 0 0 4.4 2.3 7.3 1.9 0 0-12.2-7.6-4.8-22.3z"/>
+				</g>
+				<g id="Periscope">
+					<path id="App Icon Shape" class="s50" d="m2011.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<path id="Combined Shape" class="s51" d="m1980 92.7q0 0-0.1 0v-0.1c-1.4-0.2-2.7-1.4-2.7-1.4 0 0-11.4-7.9-19.4-23.6-8-15.7-0.8-26.4-0.8-26.4 0 0 7.4-14.2 22.9-14.2q0.1 0 0.2 0c15.5 0 22.9 14.2 22.9 14.2 0 0 7.2 10.7-0.8 26.4-8 15.7-19.4 23.6-19.4 23.6 0 0-1.3 1.2-2.7 1.5q0 0-0.1 0z"/>
+						<circle id="Oval 58" class="s52" cx="1980" cy="52" r="16"/>
+						<circle id="Oval 59" class="s51" cx="1972.7" cy="43.3" r="6.5"/>
+					</g>
+				</g>
+				<g id="Tinder">
+					<path id="Icon" class="s53" d="m1844.9 40c1.4-1.6 2.5-1.4 2.5-1.4 1.5 0.2 1.3 2.5 1.3 2.5-0.3 7.5 3 9.3 3 9.3 16.9-12.8 9.5-30.4 9.5-30.4-1.2-3 0-3 0-3 1.5 0 5.3 3.6 5.3 3.6 33.9 31.7 24.7 60.8 24.7 60.8 0 0-4.9 18.5-30 19.7-25.1 1.2-32.1-18-32.1-18-6.1-19.6 15.8-43.1 15.8-43.1z"/>
+				</g>
+				<g id="WhatsApp">
+					<path id="App Icon Shape" class="s54" d="m1771.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.2-28.6-28.6v-62.8c0-17.3 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<path id="Shape" fill-rule="evenodd" class="s1" d="m1700.2 95.4l4-14.5c-3.8-6.4-6-13.9-6-21.9 0-23.8 19.3-43 43-43 23.8 0 43 19.2 43 43 0 23.7-19.2 43-43 43-7.3 0-14.2-1.8-20.3-5.1l-15 4.2 2.1-7.9zm21.5-6l2.5 1.3c5.2 2.8 11 4.3 17 4.3 19.9 0 36-16.1 36-36 0-19.9-16.1-36-36-36-19.9 0-36 16.1-36 36 0 6.5 1.8 12.8 5 18.3l1.5 2.6-3.7 13.3zm-22.7 10l2.8 2.8-3.9 1z"/>
+						<path id="Phone" class="s1" d="m1730.5 41.8l2.8 6.9c0 0 1.2 2.7-1.4 4.8-2.5 2.1-0.8 4.3-0.8 4.3 0 0 3.2 5.7 12.4 11.3 0 0 2.4 1.7 4.6-0.6 0 0 1.4-1.5 2.7-3 0 0 1.5-2.2 3.8-0.7 0 0 3.4 1.9 6.8 3.6 0 0 3 1.3 1.7 4.5 0 0-3.9 8.6-13.5 6.6 0 0-6.9-0.7-13-5.2-1-0.7-1.2-0.8-3.4-2.6-0.2-0.1-1.2-1.1-1.3-1.2-1.2-1-2.4-2.3-3-3-5-5.3-7.1-9.7-7.1-9.7 0 0-2.4-4.8-2.7-7.7 0 0-1.1-6.2 4.1-9.7 0 0 5.1-3.9 7.3 1.4z"/>
+					</g>
+				</g>
+				<g id="Reddit">
+					<path id="App Icon Shape" class="s55" d="m1651.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<path id="Icon" fill-rule="evenodd" class="s1" d="m1646.5 54c1.7-1.9 4-3 6.6-3 5 0 9.1 4.3 9.1 9.5 0 3.9-2.2 7.2-5.4 8.7q0.2 1.4 0.2 2.8c0 14.4-16.8 26-37.5 26-20.7 0-37.5-11.6-37.5-26q0-1.5 0.2-2.9c-3.1-1.5-5.2-4.8-5.2-8.6 0-5.2 4.1-9.5 9.1-9.5 2.6 0 4.9 1.1 6.5 2.9 6.4-4.6 15.1-7.5 24.8-7.9l5.2-24.5 16.9 3.9c1-2.6 3.6-4.4 6.5-4.4 3.9 0 7 3.1 7 7 0 3.9-3.1 7-7 7-3.6 0-6.6-2.8-7-6.3l-13.3-3.1-4.2 20.4c9.8 0.4 18.6 3.4 25 8zm-39.6 33.3c2.9 1.5 6.9 2.3 12 2.3 5.1 0 9.3-0.8 12.6-2.3q1.8-0.8 3-1.7 0.8-0.6 1.1-0.9c0.7-0.8 0.7-2.1-0.1-2.8-0.8-0.8-2-0.8-2.8 0q0 0-0.1 0.1-0.2 0.1-0.5 0.4-0.9 0.6-2.3 1.2c-2.7 1.3-6.3 2-10.9 2-4.5 0-7.8-0.7-10.2-1.9-1.3-0.7-2-1.3-2.2-1.6-0.6-0.9-1.9-1.1-2.8-0.4-0.9 0.6-1.1 1.8-0.5 2.7q0.3 0.4 1 1.1 1 0.9 2.7 1.8zm4.8-20.3c0-3.9-3.1-7-7-7-3.9 0-7 3.1-7 7 0 3.9 3.1 7 7 7 3.9 0 7-3.1 7-7zm29.3 0c0-3.9-3.1-7-7-7-3.9 0-7 3.1-7 7 0 3.9 3.1 7 7 7 3.9 0 7-3.1 7-7z"/>
+				</g>
+				<g id="Skype">
+					<path id="App Icon Shape" class="s56" d="m1531.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<path id="Icon" fill-rule="evenodd" class="s1" d="m1460 60q0-3.4 0.6-6.7c-2.4-3.5-7.8-13.9 1.9-27.3 10.5-14.4 27-7.5 31.1-5.5q3.1-0.5 6.4-0.5c22.1 0 40 17.9 40 40q0 3.5-0.6 6.9c2.5 4 6.8 14-2.4 26.6-9.8 13.5-24.9 8.3-30.2 5.9q-3.3 0.6-6.8 0.6c-22.1 0-40-17.9-40-40zm20.6 9.8c-2.5 2.3-1.3 5-1.3 5 0 0 1.7 4.7 7.2 8.2 6 3.4 14.6 3.1 14.6 3.1 0 0 15.6 0.1 20-9.4 4.5-9.5-2.1-15.2-2.1-15.2 0 0-2-2.5-7-4.5-5-1.9-14.4-3.3-14.4-3.3-6.7-1.8-6.5-5.4-6.5-5.4 0 0-0.9-3.4 5-4.9 5-1 8 0.5 8 0.5 0 0 3.4 1.3 5.5 4.4 2.2 3 7 2.4 7 2.4 0 0 3-0.5 3.5-3.4 0.7-3.1-1.5-5.9-1.5-5.9 0 0-4.3-6.9-17-7.4-12.7-0.5-17.4 5-17.4 5 0 0-5 4.4-5 11.2 0 6.9 7 10.3 7 10.3 0 0 4.6 2.2 10.9 3.5 6.4 1.2 9 1.9 9 1.9 6.5 2 3.7 7.4 3.7 7.4-5.2 5.9-12.7 3.9-12.7 3.9 0 0-5-1-8.5-6-4.1-5.3-8-1.4-8-1.4z"/>
+				</g>
+			</g>
+			<g id="Productivity Apps">
+				<g id="Duolingo">
+					<path id="App Icon Shape" class="s57" d="m1411.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<path id="Mask" class="s58" d="m1411.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp6)">
+							<g id="Mask by Mask">
+								<g id="Bird">
+									<path id="Shape" class="s59" d="m1379.9 27.2c4.5 0 9.5-3.2 9.5-3.2 0 0 4.2-2.5 7.1-3.2 2.8-0.7 1.7 1.5 1.7 1.5 0 0-3.1 7.4 0.2 3.6 3.4-3.7 7.5-7.2 7.5-7.2 0 0 5.6-4.7 7.8-4.7 2.3 0 0.9 1.9 0.9 1.9 0 0-4.8 6.2 1.5 1.8 6.3-4.5 11.2-3.6 11.2-3.6 9 1.5 13.7 11.8 13.7 11.8l0.7 50c0 0-9.3 15.2-25.6 14.9-16.1-0.2-35.6-18.2-36.2-18.8-0.6 0.6-20.2 18.6-36.2 18.8-16.3 0.3-25.7-14.9-25.7-14.9l0.7-50c0 0 4.7-10.3 13.7-11.8 0 0 5-0.9 11.3 3.6 6.2 4.4 1.4-1.8 1.4-1.8 0 0-1.4-1.9 0.9-1.9 2.3 0 7.8 4.7 7.8 4.7 0 0 4.1 3.5 7.5 7.2 3.4 3.8 0.3-3.6 0.3-3.6 0 0-1.2-2.2 1.7-1.5 2.8 0.7 7 3.2 7 3.2 0 0 5 3.2 9.6 3.2z"/>
+									<g id="Beak">
+										<path id="Oval 102" class="s60" d="m1368.6 88.6c0-8.8-4.5-11.6 11.3-11.6 15.8 0 11.6 2.8 11.6 11.6 0 8.8-6.4 20.4-11.6 20.4-5.1 0-11.3-11.6-11.3-20.4z"/>
+										<path id="Oval 102" class="s61" d="m1369.5 85c0-6.1-4.1-8 10.4-8 14.5 0 10.6 1.9 10.6 8 0 6-5.9 14-10.6 14-4.7 0-10.4-8-10.4-14z"/>
+										<path id="Combined Shape" class="s62" d="m1366.5 76.3c3.5-9.6 13.2-9.3 13.5-9.3 0 0 9.9-0.5 13.5 9.3 3.5 9.6-13.1 16.4-13.5 16.6 0 0-17.1-6.9-13.5-16.6z"/>
+										<ellipse id="Oval 103" class="s63" cx="1380" cy="72.5" rx="5" ry="2.5"/>
+									</g>
+									<g id="Left Eye">
+										<ellipse id="White" class="s1" cx="1346" cy="55.5" rx="18" ry="21.5"/>
+										<ellipse id="Black" class="s64" cx="1346" cy="56" rx="10" ry="12"/>
+										<circle id="Small White" class="s1" cx="1339.5" cy="48.5" r="4.5"/>
+									</g>
+									<g id="Right Eye">
+										<ellipse id="White" class="s1" cx="1414" cy="55.5" rx="18" ry="21.5"/>
+										<ellipse id="Black" class="s64" cx="1414" cy="56" rx="10" ry="12"/>
+										<circle id="Small White" class="s1" cx="1407.5" cy="48.5" r="4.5"/>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+				<g id="TeamViewer">
+					<path id="App Icon Shape" class="s65" d="m1291.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<circle id="Oval" class="s1" cx="1260" cy="60" r="48"/>
+						<path id="Arrow" class="s66" d="m1275 55.5l-4-10.5 31 14.9-31 14.6 4-10h-30l3.9 10-30.9-14.4 30.9-15.1-3.9 10.5z"/>
+					</g>
+				</g>
+				<g id="Evernote">
+					<path id="App Icon Shape" class="s67" d="m1171.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<circle id="Flare" class="s68" cx="1140" cy="60" r="60"/>
+					<path id="Icon" fill-rule="evenodd" class="s69" d="m1174.7 32.1c1.1 6 2.5 29.5 1.8 37.3-1.2 12.3-3 19.7-3.8 22.1-3.9 12.2-7.3 12.5-16.8 12.5-12.1 0-15.8-1.8-15.8-11.5 0-10.7 5-10.9 13.5-10.7 1.3 0 0 1.2 0 3.3 0 2.1 0.8 2.9-0.3 2.9-2.5 0-5.8-0.4-5.8 3 0 4.2 2 4.1 7.2 4.1 6.5 0 7.7-0.8 7.7-6.8 0-9.7-2.7-11.1-6.5-11.6-4.2-0.5-8.3-1.1-10.3-1.8-5-1.8-4.6-8.4-4.6-10.3 0-0.3-0.4-0.3-0.4 0 0 2.6-0.2 6.3-1.6 10.5-0.4 1.2-0.7 2-0.7 2-1.6 3.3-4.2 2.2-8.4 1.6-4.3-0.5-13.3-2.4-17.2-4.1-1.8-0.8-2.4-1.6-3.3-3.4-2.3-4.8-4.7-20.6-5-22.9-0.4-2.9-0.4-4.4-0.4-4.4 0-1.8 0.2-3.6 1.3-5.1 0.5-0.7 1.2-1.4 2.3-1.8 1-0.5 2.3-0.8 4-0.8h8.2c1.8 0 3.2-1.4 3.2-3.2 0 0 0-1.8 0-3.8-0.1-2-0.1-4.2-0.1-5.1 0-1.7 0.4-2.9 1.1-3.9 1-1.4 2.7-2.3 4.3-2.7 2-0.6 9.8-1.1 14.8 1 1.9 0.7 3.6 2.9 3.9 5.3 2.9-0.1 7.8-0.1 11.9 0.4 5.1 0.6 9.2 1.4 11.2 2.1 1.9 0.7 3.9 2.4 4.6 5.8zm-16.6 26.1c2.2 0 4.2 0.5 5.9 1.2 0-2.5-0.6-6.1-4.5-6.3-3.5-0.1-4.4 2.9-4.7 5.3q1.6-0.3 3.3-0.2zm-46.8-24.3q-3 0-5.1 0.9c-0.1 0-0.5 0.3-0.8 0.4q0 0 0-0.1l15.9-15.7q0 0 0.1 0l-0.3 0.5c-0.6 1.1-0.9 2.5-0.9 4.1v0.1c0 1.9 0.1 8.9 0.1 8.9 0 0.5-0.4 0.8-0.9 0.9z"/>
+				</g>
+				<g id="Dropbox">
+					<path id="Icon" fill-rule="evenodd" class="s70" d="m1067.4 66.2l-27.8 19-19.4-17.3-19.3 17.3-27.9-19 19-15.1-19-15.1 27.9-19 19.3 17.2 19.4-17.2 27.8 19-19 15.1zm-75.3-15.1l28.1 16.8 28.1-16.8-28.1-16.9zm-0.1 31.3c0 0 8.4 5.5 8.6 5.8 0.3-0.5 19.4-17.2 19.4-17.2l19.6 17.3 8.4-5.8v6l-28 18.5-28-18.5zm8.6 5.9z"/>
+				</g>
+				<g id="Shazam">
+					<g id="Icon">
+						<circle id="Icon" class="s71" cx="900" cy="60" r="46"/>
+						<path id="Icon" fill-rule="evenodd" class="s1" d="m894.7 27.1c0 0 4.6 3.1 1.3 8.2l-12.8 12.9c0 0-8.9 9 0.9 18 0 0 7.6 6.2 15.8-1.4l4.5-4.8c0 0 2.9-3.5 7.3-0.8 0 0 4.7 3.2 1.8 7.6 0 0-6.2 6.9-6.5 6.9-0.2 0-14.8 14.7-31.8 0 0 0-13.8-13-3.1-30.3 0 0 0.8-1.4 4.1-4.6l11.8-11.7c0 0 3-2.5 6.7 0zm17.1 66.8l11.9-11.7c3.2-3.2 4.1-4.6 4.1-4.6 10.7-17.3-3.2-30.3-3.2-30.3-17-14.7-31.4-0.3-31.8 0-0.2 0.2-6.5 6.9-6.5 6.9-2.8 4.4 1.9 7.6 1.9 7.6 4.4 2.7 7.2-0.8 7.2-0.8l4.6-4.8c8.1-7.6 15.7-1.4 15.7-1.4 9.9 9 0.9 18 0.9 18l-12.7 12.9c-3.4 5.1 1.2 8.2 1.2 8.2 3.7 2.5 6.7 0 6.7 0z"/>
+					</g>
+				</g>
+			</g>
+			<g id="Travel Apps">
+				<g id="Uber">
+					<g id="Background">
+						<path id="Mask" class="s72" d="m811.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					</g>
+					<g id="Icon">
+						<circle id="Mask" class="s1" cx="780" cy="60" r="36"/>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp7)">
+							<g id="Mask by Mask">
+								<path id="Shape" fill-rule="evenodd" class="s73" d="m743 62v-4h27v4zm27-10.5v17c0 0.8 0.7 1.5 1.5 1.5h17c0.8 0 1.5-0.7 1.5-1.5v-17c0-0.8-0.7-1.5-1.5-1.5h-17c-0.8 0-1.5 0.7-1.5 1.5z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<g id="Expedia">
+					<path id="App Icon Shape" class="s74" d="m691.4 0c17.3 0 28.6 11.2 28.6 28.6v62.8c0 17.3-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<circle id="Mask" class="s75" cx="660" cy="60" r="33"/>
+						<g id="Clip-Path: Mask by Mask" clip-path="url(#cp8)">
+							<g id="Mask by Mask">
+								<path id="Icon" class="s76" d="m626 65.3c0 0 8.4-3.3 12.6-4.7 9.2-3.2 27.8-9.2 27.8-9.2l-13.8-18.9 1.9-0.7 20.5 17c0 0 8.8-2.4 13.2-3.5 1.4-0.3 4.2-0.6 4.2-0.6l1.1 3.4c0 0-2.5 1.2-4 1.7-4.3 1.5-13.1 4-13.1 4l-7.9 24.8-2.1 0.6 1.3-22.8c0 0-17.2 4.7-28.2 7.3-2.9 0.7-13.2 2.6-13.2 2.6z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<g id="Airbnb">
+					<path id="App Icon Shape" class="s77" d="m571.4 0c17.3 0 28.6 11.3 28.6 28.6v62.8c0 17.4-11.3 28.6-28.6 28.6h-62.8c-17.4 0-28.6-11.3-28.6-28.6v-62.8c0-17.4 11.2-28.6 28.6-28.6z"/>
+					<g id="Icon">
+						<path id="Left" class="s1" d="m539.8 13.9v6c-3.1 0-7.1 2.6-8.6 5.5l-26.6 54.3c-3.4 6.9-0.5 15 6.5 18.2l1 0.4c5.6 2.6 14.2 1 17.7-2.8l2.2 2.1 2.1 2.2c-0.1 0.1-0.1 0.1-0.4 0.4-0.4 0.3-0.4 0.3-4.6-3.9 0.1-0.1 0.1-0.1 0.9-0.9 3-2.8 5.7-5.7 8.2-8.6 3.4-4.1 7.4-9.6 8.3-11.1 1.3-2.2 2.2-4.4 2.8-6.3q0.3-1 0.5-1.8 0.1-0.4 0.1-0.5l0.1-0.4c2.2-7.6-2.2-13.4-10.2-13.4l0.1-6c11.9 0 19.2 9.6 15.8 21.1l0.1-0.4c-0.1 0.7-0.3 1.8-0.8 3.2-0.7 2.3-1.8 4.9-3.3 7.5-1 1.8-5.3 7.6-8.9 12-2.6 3.1-5.5 6.1-8.7 9.1-0.8 0.7-0.8 0.7-5-3.5 0.1-0.1 0.1-0.1 0.4-0.5 0.4-0.3 0.4-0.3 0.5-0.4l4.2 4.2c-5.3 5.8-16.6 7.8-24.6 4.2l-0.9-0.4c-10.1-4.6-14.4-16.4-9.5-26.4l26.6-54.2c2.5-5 8.6-8.9 14-8.9z"/>
+						<path id="Right" class="s1" d="m539.7 19.9v-6h0.3c5.7 0 11.9 3.9 14.4 8.9l26.6 54.2c4.9 10 0.5 21.8-9.7 26.5l-0.5 0.2c-8.1 3.6-19.5 1.6-24.8-4.1l4.2-4.2c0.1 0.1 0.1 0.1 0.5 0.4 0.3 0.4 0.3 0.4-3.7 4.8-0.1-0.1-0.1-0.1-0.9-0.8-3.2-3-6-6-8.7-9.1-3.6-4.4-7.8-10.2-8.9-12-1.5-2.6-2.5-5.2-3.3-7.5-0.4-1.4-0.7-2.5-0.8-3.2l0.1 0.4c-3.3-11.3 3.9-21.1 15.6-21.1v6c-7.6 0-12 5.9-9.8 13.4v0.2l0.1 0.3q0 0 0.1 0.5 0.1 0.7 0.4 1.7c0.7 2 1.6 4.1 2.8 6.3 0.9 1.5 4.9 7 8.3 11.1 2.5 2.9 5.2 5.8 8.2 8.6 0.8 0.8 0.8 0.8-3.2 5.2-0.1-0.1-0.1-0.1-0.4-0.4-0.4-0.3-0.4-0.3-0.5-0.4l2.1-2.2 2.2-2.1c3.5 3.8 12.2 5.3 17.9 2.8l0.5-0.3c7.2-3.2 10.2-11.4 6.8-18.4l-26.6-54.1c-1.4-3-5.6-5.6-9-5.6z"/>
+						<g id="Clip-Path: Mask by Right" clip-path="url(#cp9)">
+							<g id="Mask by Right">
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g id="Slack">
+				<use id="img1" href="#img1" transform="matrix(.648,0,0,.648,379.727,18.727)"/>
+			</g>
+			<g id="twitch">
+				<use id="img2" href="#img2" transform="matrix(.031,0,0,.031,263.159,19.018)"/>
+			</g>
+			<g id="Discord">
+				<use id="img3" href="#img3" transform="matrix(.323,0,0,.323,138.701,17.747)"/>
+			</g>
+			<g id="Steam">
+				<use id="img4" href="#img4" transform="matrix(.388,0,0,.388,15.227,14.227)"/>
+			</g>
+		</g>
+	</g>
+</svg>
