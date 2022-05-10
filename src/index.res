@@ -1,16 +1,18 @@
 module App = {
   @react.component
   let make = () => {
-    let url = RescriptReactRouter.useUrl()
+    /* let url = RescriptReactRouter.useUrl() */
 
-    switch url.hash {
-      | ""  => <Home.Component /> 
-      | "/appicons-zeichnen" => <Appicons.Component /> 
-      | "/bandlogo-hangman" => <Hangman.Component />
-      | "/porno-pantomime" => <Pantomime.Component />
-      | "/wer-kommt" => <YesNo.Component />
-      | _  => <div>{React.string("404")}</div> 
-    } 
+    /* switch url.hash { */
+    /*   | ""  => <Home.Component /> */ 
+    /*   | "/appicons-zeichnen" => <Appicons.Component /> */ 
+    /*   | "/bandlogo-hangman" => <Hangman.Component /> */
+    /*   | "/porno-pantomime" => <Pantomime.Component /> */
+    /*   | "/wer-kommt" => <YesNo.Component /> */
+    /*   | _  => <div>{React.string("404")}</div> */ 
+    /* } */ 
+
+    <Sort.Component />
   }
 }
 

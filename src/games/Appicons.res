@@ -98,7 +98,7 @@ module Component = {
     }
 
     let iconClassName = if showIcon {
-      cx([icon])
+      icon
     } else {
       cx([icon, "hide"])
     }
