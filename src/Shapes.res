@@ -12,7 +12,7 @@ type rect = {
 
 let insideRect = (point: point, rect: rect) => {
   point.x >= rect.x &&
-  point.x <= rect.x + rect.width &&
+  point.x < rect.x + rect.width &&
   point.y >= rect.y &&
-  point.y <= rect.y + rect.height
+  point.y < rect.y + rect.height
 }
