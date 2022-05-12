@@ -31,13 +31,6 @@ module Component = {
     padding: 0 0.5rem;
   `)
 
-  let container = css(`
-    display: flex;
-    flex-direction: column;
-    
-    gap: 0.5rem;
-  `)
-
   let itemStyle = css(
     `
     display: flex;
@@ -45,7 +38,6 @@ module Component = {
     align-items: center;
 
     height: 1rem;
-    margin: 0.5rem 0;
     padding: 0.5rem;
 
     background: ${Shared.Colors.lightGray};
@@ -60,17 +52,23 @@ module Component = {
 
   let slot = css(
     `
-    height: 0rem;
+    position: relative;
+    height: 0.5rem;
     
-    border-radius: 0.5rem;
-
-    transition: height .2s;
-
     &.visible {
-      height: 2rem;
-      margin: 0.5rem 0;
+      &::before {
+        content: "";
 
-      border: 1px dashed ${Shared.Colors.orange};
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 1px dashed ${Shared.Colors.orange};
+        border-radius: 50%;
+      }
     }
   `,
   )
@@ -89,6 +87,14 @@ module Component = {
     text-align: center;
     font-size: 0.8rem;
   `)
+
+  let optionsContainer = css(`
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.5rem;
+  `)
+
 
   let getItemClassName = (item, selectedItem) => {
     switch (item, selectedItem) {
@@ -143,6 +149,7 @@ module Component = {
             setOptions(_ => ArrayUtils.remove(options, item))
             setSortedList(_ => ArrayUtils.insertAt(sortedList, item, index))
             setShowResultAnimation(_ => Some(ResultAnimation.Right))
+            setSelectedItem(_ => None)
           } else {
             setShowResultAnimation(_ => Some(ResultAnimation.Wrong))
           }
@@ -153,7 +160,6 @@ module Component = {
 
     let onCloseResultAnimation = () => {
       setShowResultAnimation(_ => None)
-      setSelectedItem(_ => None)
     }
 
     <div className=Shared.Styles.fullscreenContainer>
@@ -179,7 +185,7 @@ module Component = {
           <div className=legend> {React.string("mehr Bandmitglieder")} </div>
         </div>
         <div className=separator />
-        <div>
+        <div className=optionsContainer>
           {options
           ->Belt.Array.mapWithIndex((index, item) =>
             <div
