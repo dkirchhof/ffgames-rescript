@@ -3,14 +3,32 @@ type sortableItem = {
   value: int,
 }
 
+let isItemInRightOrder = (selectedItem, itemBefore, itemAfter) => {
+  switch (itemBefore, itemAfter) {
+  // first
+  | (None, Some(after)) => selectedItem.value < after.value
+
+  // between
+  | (Some(before), Some(after)) =>
+    selectedItem.value > before.value && selectedItem.value < after.value
+
+  // last
+  | (Some(before), None) => selectedItem.value > before.value
+
+  // won't happen
+  | _ => false
+  }
+}
+
 module Component = {
   open Emotion
 
   let main = css(`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    gap: 5rem;
+    padding: 0 0.5rem;
   `)
 
   let container = css(`
@@ -20,32 +38,56 @@ module Component = {
     gap: 0.5rem;
   `)
 
-  let itemStyle = css(`
+  let itemStyle = css(
+    `
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    height: 2rem;
+    height: 1rem;
+    margin: 0.5rem 0;
     padding: 0.5rem;
 
-    border: 1px solid;
+    background: ${Shared.Colors.lightGray};
+    border-radius: 0.5rem;
 
     &.selected {
-      border-color: red;
+      color: ${Shared.Colors.yellow};
+      background-color: ${Shared.Colors.orange};
     }
-  `)
+  `,
+  )
 
-  let slot = css(`
-    height: 3rem;
+  let slot = css(
+    `
+    height: 0rem;
     
-    border: 1px dashed;
-    opacity: 0.1;
+    border-radius: 0.5rem;
 
-    transition: opacity .2s;
+    transition: height .2s;
 
     &.visible {
-      opacity: 1;
+      height: 2rem;
+      margin: 0.5rem 0;
+
+      border: 1px dashed ${Shared.Colors.orange};
     }
+  `,
+  )
+
+  let separator = css(
+    `
+    width: 30%;
+    height: 1px;
+    margin: 0 auto;
+
+    background: ${Shared.Colors.darkGray};
+  `,
+  )
+
+  let legend = css(`
+    text-align: center;
+    font-size: 0.8rem;
   `)
 
   let getItemClassName = (item, selectedItem) => {
@@ -60,78 +102,102 @@ module Component = {
 
   @react.component
   let make = () => {
+    let (round, setRound) = React.useState(_ => 1)
+    let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
+
     let (options, setOptions) = React.useState(_ => [
       {name: "zehn", value: 10},
       {name: "null", value: 0},
       {name: "acht", value: 8},
     ])
 
-    let (sortedList, setSortedList) = React.useState(_ => [{name: "sechs", value: 6}])
+    let (sortedList, setSortedList) = React.useState(_ => [
+      {name: "sechs", value: 6},
+      {name: "sieben", value: 7},
+      {name: "elf", value: 11},
+    ])
 
     let (selectedItem, setSelectedItem) = React.useState(_ => None)
 
-    /* let value = 25 */
-    /* let items = [20, 30] */
+    let numberOfRounds = 10 // Data.numberOfRounds
 
-    /* switch slotIndex { */
-    /* | Some(index) => { */
-    /* let itemBefore = Belt.Array.get(items, index - 1) */
-    /* let itemAfter = Belt.Array.get(items, index) */
-
-    /* let correct = switch (itemBefore, itemAfter) { */
-    /* // first */
-    /* | (None, Some(after)) => value < after */
-
-    /* // between */
-    /* | (Some(before), Some(after)) => value > before && value < after */
-
-    /* // last */
-    /* | (Some(before), None) => value > before */
-
-    /* // error */
-    /* | (None, None) => false */
-    /* } */
-
-    /* Js.log(correct) */
-    /* } */
-    /* | None => () */
-    /* } */
+    let onNextRoundClick = _ => {
+      if round < numberOfRounds {
+        setRound(r => r + 1)
+      }
+    }
 
     let onItemClick = (item, _e) => {
       setSelectedItem(_ => Some(item))
     }
 
     let onSlotClick = (index, _e) => {
-      Js.log(index)
+      switch selectedItem {
+      | Some(item) => {
+          let itemBefore = Belt.Array.get(sortedList, index - 1)
+          let itemAfter = Belt.Array.get(sortedList, index)
+
+          let isInRightOrder = isItemInRightOrder(item, itemBefore, itemAfter)
+
+          if isInRightOrder {
+            setOptions(_ => ArrayUtils.remove(options, item))
+            setSortedList(_ => ArrayUtils.insertAt(sortedList, item, index))
+            setShowResultAnimation(_ => Some(ResultAnimation.Right))
+          } else {
+            setShowResultAnimation(_ => Some(ResultAnimation.Wrong))
+          }
+        }
+      | None => ()
+      }
     }
 
-    <main className=main>
-      <div className=container>
-        <div className={getSlotClassName(selectedItem)} onClick={onSlotClick(0)} />
-        {sortedList
-        ->Belt.Array.mapWithIndex((index, item) => {
-          <React.Fragment key={Belt.Int.toString(index)}>
-            <div className=itemStyle>
-              <span> {React.string(item.name)} </span>
-              <span> {item.value->Belt.Int.toString->React.string} </span>
+    let onCloseResultAnimation = () => {
+      setShowResultAnimation(_ => None)
+      setSelectedItem(_ => None)
+    }
+
+    <div className=Shared.Styles.fullscreenContainer>
+      <header className=Shared.Styles.header>
+        <h1> {React.string(Games.sortieren.name)} </h1>
+        <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
+      </header>
+      <main className=main>
+        <div>
+          <div className=legend> {React.string("weniger Bandmitglieder")} </div>
+          <div className={getSlotClassName(selectedItem)} onClick={onSlotClick(0)} />
+          {sortedList
+          ->Belt.Array.mapWithIndex((index, item) => {
+            <React.Fragment key={Belt.Int.toString(index)}>
+              <div className=itemStyle>
+                <span> {React.string(item.name)} </span>
+                <span> {item.value->Belt.Int.toString->React.string} </span>
+              </div>
+              <div className={getSlotClassName(selectedItem)} onClick={onSlotClick(index + 1)} />
+            </React.Fragment>
+          })
+          ->React.array}
+          <div className=legend> {React.string("mehr Bandmitglieder")} </div>
+        </div>
+        <div className=separator />
+        <div>
+          {options
+          ->Belt.Array.mapWithIndex((index, item) =>
+            <div
+              key={Belt.Int.toString(index)}
+              className={getItemClassName(item, selectedItem)}
+              onClick={onItemClick(item)}>
+              {React.string(item.name)}
             </div>
-            <div className={getSlotClassName(selectedItem)} onClick={onSlotClick(index + 1)} />
-          </React.Fragment>
-        })
-        ->React.array}
-      </div>
-      <div>
-        {options
-        ->Belt.Array.mapWithIndex((index, item) =>
-          <div
-            key={Belt.Int.toString(index)}
-            className={getItemClassName(item, selectedItem)}
-            onClick={onItemClick(item)}>
-            {React.string(item.name)}
-          </div>
-        )
-        ->React.array}
-      </div>
-    </main>
+          )
+          ->React.array}
+        </div>
+      </main>
+      <footer className=Shared.Styles.footer>
+        <button className=Shared.Styles.primaryButton onClick=onNextRoundClick>
+          {React.string(`Nächste Runde`)}
+        </button>
+      </footer>
+      <ResultAnimation.Component value=showResultAnimation onAnimationEnd=onCloseResultAnimation />
+    </div>
   }
 }

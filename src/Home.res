@@ -37,6 +37,7 @@ module Component = {
         <Link game=Games.appicons />
         <Link game=Games.bandlogoHangman />
         <Link game=Games.pornoPantomime />
+        <Link game=Games.sortieren />
         <Link game=Games.werKommt />
       </main>
     </div>
