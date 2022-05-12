@@ -162,23 +162,21 @@ module Letter = {
     open Emotion
 
     let className = guessed =>
-      css(
-        `
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
+      css(`
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
 
-      width: 2rem;
-      height: 2rem;
+        width: 2rem;
+        height: 2rem;
 
-      background: ${Shared.Colors.lightGray};
-      border-radius: 0.5rem;
-      opacity: ${guessed ? "0.3" : "1"};
+        background: ${Shared.Colors.lightGray};
+        border-radius: 0.5rem;
+        opacity: ${guessed ? "0.3" : "1"};
 
-      font-size: 1rem;
-    `,
-      )
+        font-size: 1rem;
+      `)
 
     @react.component
     let make = (~letter, ~onLetterClick) => {
@@ -222,53 +220,12 @@ module Component = {
     overflow-x: scroll;
   `)
 
-  let fadeOut = keyframes(`
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    30% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    70% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(2);
-      opacity: 0;
-    }
-  `)
-
-  let miss = css(
-    `
-      position: fixed;
-      inset: 0;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      animation: ${fadeOut} 2s ease-in forwards;
-
-      ::before {
-        content: "✘";
-
-        color: ${Shared.Colors.orange};
-
-        font-size: 30rem;
-        font-size: 130vw;
-      }
-  `,
-  )
-
   @react.component
   let make = () => {
     let (round, setRound) = React.useState(_ => 1)
     let (slotGroups, setSlotGroups) = React.useState(_ => [])
     let (letters, setLetters) = React.useState(_ => [])
-    let (showMiss, setShowMiss) = React.useState(_ => false)
+    let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
 
     let numberOfRounds = Data.numberOfRounds
     let img = `/assets/bandlogos/${Data.shuffledBands[round - 1]}.jpg`
@@ -312,8 +269,9 @@ module Component = {
               }),
             ),
           )
+          setShowResultAnimation(_ => Some(ResultAnimation.Right))
         } else {
-          setShowMiss(_ => true)
+          setShowResultAnimation(_ => Some(ResultAnimation.Wrong))
         }
       }
     }
@@ -328,8 +286,8 @@ module Component = {
       }
     }
 
-    let onMissAnimationEnd = _ => {
-      setShowMiss(_ => false)
+    let onCloseResultAnimation = () => {
+      setShowResultAnimation(_ => None)
     }
 
     <div className=Shared.Styles.fullscreenContainer>
@@ -356,7 +314,8 @@ module Component = {
           {React.string(`Nächste Runde`)}
         </button>
       </footer>
-      {showMiss ? <div className=miss onAnimationEnd=onMissAnimationEnd /> : React.null}
+
+      <ResultAnimation.Component value=showResultAnimation onAnimationEnd=onCloseResultAnimation />
     </div>
   }
 }
