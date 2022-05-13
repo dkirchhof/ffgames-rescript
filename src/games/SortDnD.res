@@ -1,6 +1,30 @@
-type sortableItem = {
-  name: string,
-  value: int,
+module Data = {
+  type sortableItem = {
+    name: string,
+    value: int,
+  }
+
+  type question = {
+    lower: string,
+    higher: string,
+    answers: array<sortableItem>,
+  }
+
+  let shuffledQuestions = Belt.Array.shuffle([
+    {
+      lower: "weniger Bandmitglieder",
+      higher: "mehr Bandmitglieder",
+      answers: Belt.Array.shuffle([
+        {name: "1", value: 1},
+        {name: "2", value: 2},
+        {name: "3", value: 3},
+        {name: "4", value: 4},
+        {name: "5", value: 5},
+      ]),
+    },
+  ])
+
+  let numberOfRounds = Belt.Array.length(shuffledQuestions)
 }
 
 let getPointerPosition: ReactEvent.Pointer.t => Shapes.point = event => {
@@ -18,7 +42,11 @@ let setTranslation: (Browser.htmlElement, Shapes.point) => unit = %raw(`
   }
 `)
 
-let isItemInRightOrder = (selectedItem, itemBefore, itemAfter) => {
+let isItemInRightOrder = (
+  selectedItem: Data.sortableItem,
+  itemBefore: option<Data.sortableItem>,
+  itemAfter: option<Data.sortableItem>,
+) => {
   switch (itemBefore, itemAfter) {
   // first
   | (None, Some(after)) => selectedItem.value < after.value
@@ -97,7 +125,7 @@ module Component = {
   )
 
   type draggingItem = {
-    item: sortableItem,
+    item: Data.sortableItem,
     element: Browser.htmlElement,
     startX: int,
     startY: int,
@@ -106,23 +134,21 @@ module Component = {
   @react.component
   let make = () => {
     let (round, setRound) = React.useState(_ => 1)
-    let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
+    let (options, setOptions) = React.useState(_ => [])
+    let (sortedList, setSortedList) = React.useState(_ => [])
     let (selectedItem, setSelectedItem) = React.useState(_ => None)
     let (dropZones, setDropZones) = React.useState(_ => [])
+    let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
 
-    let (options, setOptions) = React.useState(_ => [
-      {name: "zehn", value: 10},
-      {name: "null", value: 0},
-      {name: "acht", value: 8},
-    ])
+    let currentQuestion = Data.shuffledQuestions[round - 1]
+    let numberOfRounds = Data.numberOfRounds
 
-    let (sortedList, setSortedList) = React.useState(_ => [
-      {name: "sechs", value: 6},
-      {name: "sieben", value: 7},
-      {name: "elf", value: 11},
-    ])
+    React.useEffect1(() => {
+      setSortedList(_ => [currentQuestion.answers[0]])
+      setOptions(_ => Belt.Array.sliceToEnd(currentQuestion.answers, 1))
 
-    let numberOfRounds = 10 // Data.numberOfRounds
+      None
+    }, [round])
 
     let onStartDraggingItem = (item, e) => {
       let element = getPointerTarget(e)
@@ -162,6 +188,30 @@ module Component = {
       })
     }
 
+    let onDroppedOnItem = (item, point, index) => {
+      let (_, rect) = dropZones[index]
+
+      let sortedListIndex = if Shapes.isAboveCenter(point, rect) {
+        index
+      } else {
+        index + 1
+      }
+
+      let itemBefore = Belt.Array.get(sortedList, sortedListIndex - 1)
+      let itemAfter = Belt.Array.get(sortedList, sortedListIndex)
+
+      let correct = isItemInRightOrder(item.item, itemBefore, itemAfter)
+
+      if correct {
+        setOptions(_ => ArrayUtils.remove(options, item.item))
+        setSortedList(_ => ArrayUtils.insertAt(sortedList, item.item, sortedListIndex))
+        setShowResultAnimation(_ => Some(ResultAnimation.Right))
+      } else {
+        setTranslation(item.element, {x: 0, y: 0})
+        setShowResultAnimation(_ => Some(ResultAnimation.Wrong))
+      }
+    }
+
     let onStopDraggingItem = (item, e) => {
       let point = getPointerPosition(e)
 
@@ -169,29 +219,7 @@ module Component = {
         dropZones->Belt.Array.getIndexBy(((_, rect)) => Shapes.insideRect(point, rect))
 
       switch dropZoneIndex {
-      | Some(index) => {
-          let (_, rect) = dropZones->Belt.Array.getExn(index)
-
-          let sortedListIndex = if Shapes.isAboveCenter(point, rect) {
-            index
-          } else {
-            index + 1
-          }
-
-          let itemBefore = Belt.Array.get(sortedList, sortedListIndex - 1)
-          let itemAfter = Belt.Array.get(sortedList, sortedListIndex)
-
-          let correct = isItemInRightOrder(item.item, itemBefore, itemAfter)
-
-          if correct {
-            setOptions(_ => ArrayUtils.remove(options, item.item))
-            setSortedList(_ => ArrayUtils.insertAt(sortedList, item.item, index))
-            setShowResultAnimation(_ => Some(ResultAnimation.Right))
-          } else {
-            setTranslation(item.element, {x: 0, y: 0})
-            setShowResultAnimation(_ => Some(ResultAnimation.Wrong))
-          }
-        }
+      | Some(index) => onDroppedOnItem(item, point, index)
       | None => ()
       }
 
@@ -219,7 +247,7 @@ module Component = {
 
     let onNextRoundClick = _ => {
       if round < numberOfRounds {
-        setRound(r => r + 1)
+        setRound(succ)
       }
     }
 
@@ -234,7 +262,7 @@ module Component = {
       </header>
       <main className=main onPointerMove onPointerUp>
         <div>
-          <div className=legend> {React.string("weniger Bandmitglieder")} </div>
+          <div className=legend> {React.string(currentQuestion.lower)} </div>
           {sortedList
           ->Belt.Array.map(item => {
             <div className=slot key={Belt.Int.toString(item.value)}>
@@ -245,7 +273,7 @@ module Component = {
             </div>
           })
           ->React.array}
-          <div className=legend> {React.string("mehr Bandmitglieder")} </div>
+          <div className=legend> {React.string(currentQuestion.higher)} </div>
         </div>
         <div className=optionsContainer>
           {options
