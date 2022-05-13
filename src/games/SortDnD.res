@@ -5,21 +5,55 @@ module Data = {
   }
 
   type question = {
-    lower: string,
-    higher: string,
+    name: string,
     answers: array<sortableItem>,
   }
 
   let shuffledQuestions = Belt.Array.shuffle([
     {
-      lower: "weniger Bandmitglieder",
-      higher: "mehr Bandmitglieder",
+      name: "aktuelle Bandmitglieder (Stand 13.05.2022)",
       answers: Belt.Array.shuffle([
-        {name: "1", value: 1},
-        {name: "2", value: 2},
-        {name: "3", value: 3},
-        {name: "4", value: 4},
-        {name: "5", value: 5},
+        {name: "Slipknot", value: 9},
+        {name: "Iron Maiden", value: 6},
+        {name: "AC/DC", value: 5},
+        {name: "Blink-182", value: 3},
+        {name: "Metallica", value: 4},
+        {name: "Guns n' Roses", value: 7},
+      ]),
+    },
+    {
+      name: "Facebook-Follower (Stand 13.05.2022)",
+      answers: Belt.Array.shuffle([
+        {name: "Linkin Park", value: 56_777_419},
+        {name: "System Of A Down", value: 19_389_514},
+        {name: "Metallica", value: 36_640_352},
+        {name: "Rihanna", value: 102_218_972},
+        {name: "Foo Fighters", value: 12_209_167},
+        {name: "Rammstein", value: 8_660_305}
+      ]),
+    },
+    {
+      name: `mtl. Spotify-Zuhörer (Stand 13.05.2022)`,
+      answers: Belt.Array.shuffle([
+        {name: "Bury Tomorrow", value: 617_975},
+        {name: `Ghøstkid`, value: 274_386},
+        {name: "Blackout Problems", value: 72_999},
+        {name: "Infected Rain", value: 66_578},
+        {name: "Paleface", value: 182_139},
+      ]),
+    },
+    {
+      name: `Festival-Besucher`,
+      answers: Belt.Array.shuffle([
+        {name: "Rock Hard", value: 7500},
+        {name: "Rage against Racism", value: 3000},
+        {name: "Full Force", value: 25000},
+        {name: "Dong", value: 2000},
+        {name: "Wacken", value: 75000},
+        {name: "Party.San", value: 8000},
+        {name: "Rock am Ring", value: 87000},
+        {name: "Summer Breeze", value: 40000},
+        {name: "Vainstream", value: 16000},
       ]),
     },
   ])
@@ -63,6 +97,12 @@ let isItemInRightOrder = (
   }
 }
 
+let intToLocaleString: int => string = %raw(`
+  function(int) {
+    return int.toLocaleString();
+  }
+`)
+
 module Component = {
   open Emotion
 
@@ -74,6 +114,12 @@ module Component = {
     justify-content: space-between;
 
     padding: 0 0.5rem;
+  `)
+
+  let name = css(`
+    margin-bottom: 0.5rem;
+
+    text-align: center;
   `)
 
   let legend = css(`
@@ -245,6 +291,14 @@ module Component = {
       }
     }
 
+    let onResolveClick = _ => {
+      setOptions(_ => [])
+
+      setSortedList(_ =>
+        Belt.SortArray.stableSortBy(currentQuestion.answers, (a, b) => compare(a.value, b.value))
+      )
+    }
+
     let onNextRoundClick = _ => {
       if round < numberOfRounds {
         setRound(succ)
@@ -262,18 +316,19 @@ module Component = {
       </header>
       <main className=main onPointerMove onPointerUp>
         <div>
-          <div className=legend> {React.string(currentQuestion.lower)} </div>
+          <div className=name> {React.string(currentQuestion.name)} </div>
+          <div className=legend> {React.string("weniger")} </div>
           {sortedList
           ->Belt.Array.map(item => {
             <div className=slot key={Belt.Int.toString(item.value)}>
               <div className=itemStyle>
                 <span> {React.string(item.name)} </span>
-                <span> {item.value->Belt.Int.toString->React.string} </span>
+                <span> {item.value->intToLocaleString->React.string} </span>
               </div>
             </div>
           })
           ->React.array}
-          <div className=legend> {React.string(currentQuestion.higher)} </div>
+          <div className=legend> {React.string("mehr")} </div>
         </div>
         <div className=optionsContainer>
           {options
@@ -289,6 +344,9 @@ module Component = {
         </div>
       </main>
       <footer className=Shared.Styles.footer>
+        <button className=Shared.Styles.button onClick=onResolveClick>
+          {React.string(`Auflösen`)}
+        </button>
         <button className=Shared.Styles.primaryButton onClick=onNextRoundClick>
           {React.string(`Nächste Runde`)}
         </button>

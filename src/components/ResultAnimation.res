@@ -33,7 +33,7 @@ module Component = {
     align-items: center;
     justify-content: center;
 
-    animation: ${fadeOut} 2s ease-in forwards;
+    animation: ${fadeOut} 1s ease-in forwards;
 
     ::before {
       content: "✘";
