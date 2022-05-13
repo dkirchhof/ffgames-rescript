@@ -16,3 +16,7 @@ let insideRect = (point: point, rect: rect) => {
   point.y >= rect.y &&
   point.y < rect.y + rect.height
 }
+
+let isAboveCenter = (point: point, rect: rect) => {
+  point.y < rect.y + rect.height / 2
+}
