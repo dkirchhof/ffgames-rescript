@@ -385,16 +385,14 @@ module Component = {
   let make = () => {
     let (round, setRound) = React.useState(_ => 1)
 
-    let numberOfRounds = Data.numberOfRounds
-
     let onNextRoundClick = _ => {
-      if round < numberOfRounds {
+      if round < Data.numberOfRounds {
         setRound(succ)
       }
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <Header.Component name=meta.name round=1 numberOfRounds=1 />
+      <Header.Component name=meta.name round numberOfRounds=Data.numberOfRounds />
       <main className=main>
         <div className=name> {React.string(Data.shuffledNames[round - 1])} </div>
       </main>

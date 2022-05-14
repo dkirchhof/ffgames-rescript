@@ -232,7 +232,6 @@ module Component = {
     let (letters, setLetters) = React.useState(_ => [])
     let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
 
-    let numberOfRounds = Data.numberOfRounds
     let img = `/assets/bandlogos/${Data.shuffledBands[round - 1]}.jpg`
 
     React.useEffect1(() => {
@@ -286,7 +285,7 @@ module Component = {
     }
 
     let onNextRoundClick = _ => {
-      if round < numberOfRounds {
+      if round < Data.numberOfRounds {
         setRound(succ)
       }
     }
@@ -296,7 +295,7 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <Header.Component name=meta.name round=1 numberOfRounds=1 />
+      <Header.Component name=meta.name round numberOfRounds=Data.numberOfRounds />
       <main className=main>
         <SlotGroups.Component slotGroups />
         <div className=imageContainer> <img src=img /> </div>

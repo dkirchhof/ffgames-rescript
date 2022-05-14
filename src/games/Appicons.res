@@ -88,7 +88,6 @@ module Component = {
     let (round, setRound) = React.useState(_ => 1)
     let (showIcon, setShowIcon) = React.useState(_ => false)
 
-    let numberOfRounds = Data.numberOfRounds
     let currentIcon = Data.shuffledIcons[round - 1]
 
     let onToggleIconClick = _ => {
@@ -96,7 +95,7 @@ module Component = {
     }
 
     let onNextRoundClick = _ => {
-      if round < numberOfRounds {
+      if round < Data.numberOfRounds {
         setRound(succ)
         setShowIcon(_ => false)
       }
@@ -114,7 +113,7 @@ module Component = {
     )
 
     <div className=Shared.Styles.fullscreenContainer>
-      <Header.Component name=meta.name round=1 numberOfRounds=1 />
+      <Header.Component name=meta.name round numberOfRounds=Data.numberOfRounds />
       <main className=main>
         <div className=name> {React.string(currentIcon.name)} </div>
         <div className={iconClassName} style={iconStyle} />

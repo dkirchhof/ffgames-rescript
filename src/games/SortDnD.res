@@ -239,7 +239,6 @@ module Component = {
     let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
 
     let currentQuestion = Data.shuffledQuestions[round - 1]
-    let numberOfRounds = Data.numberOfRounds
 
     React.useEffect1(() => {
       setSortedList(_ => [currentQuestion.answers[0]])
@@ -354,7 +353,7 @@ module Component = {
     }
 
     let onNextRoundClick = _ => {
-      if round < numberOfRounds {
+      if round < Data.numberOfRounds {
         setRound(succ)
       }
     }
@@ -364,7 +363,7 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <Header.Component name=meta.name round=1 numberOfRounds=1 />
+      <Header.Component name=meta.name round numberOfRounds=Data.numberOfRounds />
       <main className=main onPointerMove onPointerUp>
         <div>
           <div className=name> {React.string(currentQuestion.name)} </div>
