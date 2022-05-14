@@ -360,7 +360,11 @@ module Component = {
 
     <div className=Shared.Styles.fullscreenContainer>
       <header className=Shared.Styles.header>
-        <h1> {React.string(Games.sortieren.name)} </h1>
+        <h1> 
+          {React.string(Games.sortieren.name)} 
+          /* <a href="/">{React.string(`⬅`)}</a> */
+          <BackButton.Component />
+        </h1>
         <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
       </header>
       <main className=main onPointerMove onPointerUp>

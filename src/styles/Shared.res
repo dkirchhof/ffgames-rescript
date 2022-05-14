@@ -27,6 +27,7 @@ module Styles = {
     text-align: center;
 
     > h1 {
+      position: relative;
       margin: 0;
       padding: 1rem;
 
