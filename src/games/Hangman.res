@@ -1,5 +1,10 @@
 let string_of_char = c => String.make(1, c)
 
+let meta: Game.meta = {
+  name: "Bandlogo-Hangman",
+  url: "/#/bandlogo-hangman",
+}
+
 module Data = {
   let shuffledBands = Belt.Array.shuffle([
     "ANATEUS",
@@ -291,10 +296,7 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <header className=Shared.Styles.header>
-        <h1> {React.string(Games.bandlogoHangman.name)} </h1>
-        <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
-      </header>
+      <Header.Component name=meta.name round=1 numberOfRounds=1 />
       <main className=main>
         <SlotGroups.Component slotGroups />
         <div className=imageContainer> <img src=img /> </div>

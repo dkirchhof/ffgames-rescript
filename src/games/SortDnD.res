@@ -1,3 +1,8 @@
+let meta: Game.meta = {
+  name: "Sortieren",
+  url: "/#/sortieren",
+}
+
 module Data = {
   type sortableItem = {
     name: string,
@@ -248,7 +253,7 @@ module Component = {
       let startX = ReactEvent.Pointer.pageX(e)
       let startY = ReactEvent.Pointer.pageY(e)
 
-      element.classList.add(."dragging")
+      element.classList.add(. "dragging")
       setSelectedItem(_ => Some({item: item, element: element, startX: startX, startY: startY}))
 
       setDropZones(_ =>
@@ -317,7 +322,7 @@ module Component = {
       | None => ()
       }
 
-      item.element.classList.remove(."dragging")
+      item.element.classList.remove(. "dragging")
       setSelectedItem(_ => None)
 
       dropZones->Belt.Array.forEach(((dropZone, _)) => {
@@ -359,14 +364,7 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <header className=Shared.Styles.header>
-        <h1> 
-          {React.string(Games.sortieren.name)} 
-          /* <a href="/">{React.string(`⬅`)}</a> */
-          <BackButton.Component />
-        </h1>
-        <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
-      </header>
+      <Header.Component name=meta.name round=1 numberOfRounds=1 />
       <main className=main onPointerMove onPointerUp>
         <div>
           <div className=name> {React.string(currentQuestion.name)} </div>

@@ -1,3 +1,8 @@
+let meta: Game.meta = {
+  name: "Appicons zeichnen",
+  url: "/#/appicons-zeichnen",
+}
+
 module Data = {
   type icon = {
     name: string,
@@ -109,10 +114,7 @@ module Component = {
     )
 
     <div className=Shared.Styles.fullscreenContainer>
-      <header className=Shared.Styles.header>
-        <h1> {React.string(Games.appicons.name)} </h1>
-        <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
-      </header>
+      <Header.Component name=meta.name round=1 numberOfRounds=1 />
       <main className=main>
         <div className=name> {React.string(currentIcon.name)} </div>
         <div className={iconClassName} style={iconStyle} />

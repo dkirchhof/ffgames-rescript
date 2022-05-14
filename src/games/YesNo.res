@@ -1,3 +1,8 @@
+let meta: Game.meta = {
+  name: "Wer kommt?",
+  url: "/#/wer-kommt",
+}
+
 module Data = {
   type band = {
     name: string,
@@ -372,9 +377,7 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <header className=Shared.Styles.header>
-        <h1> {React.string(Games.werKommt.name)} </h1>
-      </header>
+      <Header.Component name=meta.name round=1 numberOfRounds=1 />
       <main className=main>
         {questions
         ->Belt.Array.mapWithIndex((index, question) => {

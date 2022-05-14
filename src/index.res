@@ -8,7 +8,6 @@ module App = {
       | "/appicons-zeichnen" => <Appicons.Component /> 
       | "/bandlogo-hangman" => <Hangman.Component />
       | "/porno-pantomime" => <Pantomime.Component />
-      /* | "/sortieren" => <Sort.Component /> */
       | "/sortieren" => <SortDnD.Component />
       | "/wer-kommt" => <YesNo.Component />
       | _  => <div>{React.string("404")}</div> 

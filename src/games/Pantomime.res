@@ -1,3 +1,8 @@
+let meta: Game.meta = {
+  name: "Porno-Pantomime",
+  url: "/#/porno-pantomime",
+}
+
 module Data = {
   let shuffledNames = Belt.Array.shuffle([
     `2001 Orgien im Weltraum`,
@@ -389,10 +394,7 @@ module Component = {
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <header className=Shared.Styles.header>
-        <h1> {React.string(Games.pornoPantomime.name)} </h1>
-        <div> {React.string(j`Runde $round / $numberOfRounds`)} </div>
-      </header>
+      <Header.Component name=meta.name round=1 numberOfRounds=1 />
       <main className=main>
         <div className=name> {React.string(Data.shuffledNames[round - 1])} </div>
       </main>
