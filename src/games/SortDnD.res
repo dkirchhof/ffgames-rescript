@@ -6,12 +6,16 @@ module Data = {
 
   type question = {
     name: string,
+    less: string,
+    more: string,
     answers: array<sortableItem>,
   }
 
   let shuffledQuestions = Belt.Array.shuffle([
     {
       name: "aktuelle Bandmitglieder (Stand 13.05.2022)",
+      less: "weniger",
+      more: "mehr",
       answers: Belt.Array.shuffle([
         {name: "Slipknot", value: 9},
         {name: "Iron Maiden", value: 6},
@@ -23,17 +27,21 @@ module Data = {
     },
     {
       name: "Facebook-Follower (Stand 13.05.2022)",
+      less: "weniger",
+      more: "mehr",
       answers: Belt.Array.shuffle([
         {name: "Linkin Park", value: 56_777_419},
         {name: "System Of A Down", value: 19_389_514},
         {name: "Metallica", value: 36_640_352},
         {name: "Rihanna", value: 102_218_972},
         {name: "Foo Fighters", value: 12_209_167},
-        {name: "Rammstein", value: 8_660_305}
+        {name: "Rammstein", value: 8_660_305},
       ]),
     },
     {
       name: `mtl. Spotify-Zuhörer (Stand 13.05.2022)`,
+      less: "weniger",
+      more: "mehr",
       answers: Belt.Array.shuffle([
         {name: "Bury Tomorrow", value: 617_975},
         {name: `Ghøstkid`, value: 274_386},
@@ -44,17 +52,52 @@ module Data = {
     },
     {
       name: `Festival-Besucher`,
+      less: "weniger",
+      more: "mehr",
       answers: Belt.Array.shuffle([
         {name: "Rock Hard", value: 7500},
         {name: "Rage against Racism", value: 3000},
         {name: "Full Force", value: 25000},
-        {name: "Dong", value: 2000},
+        /* {name: "Dong", value: 2000}, */
         {name: "Wacken", value: 75000},
         {name: "Party.San", value: 8000},
         {name: "Rock am Ring", value: 87000},
         {name: "Summer Breeze", value: 40000},
         {name: "Vainstream", value: 16000},
       ]),
+    },
+    {
+      name: `Bandgründung`,
+      less: `früher`,
+      more: `später`,
+      answers: [
+        /* {name: `The Beatles`, value: 1960}, */
+        {name: `The Rolling Stones`, value: 1962},
+        /* {name: `Scorpions`, value: 1965}, */
+        {name: `Led Zeppelin`, value: 1968},
+        {name: `Black Sabbath`, value: 1969},
+        {name: `Queen`, value: 1970},
+        /* {name: `Van Halen`, value: 1972}, */
+        /* {name: `Kiss`, value: 1973}, */
+        {name: `Iron Maiden`, value: 1975},
+        {name: `Misfits`, value: 1977},
+        {name: `Slayer`, value: 1981},
+        {name: `Guns n' Roses`, value: 1985},
+      ],
+    },
+    {
+      name: `Todesjahr`,
+      less: `früher`,
+      more: `später`,
+      answers: [
+        {name: `John Lennon`, value: 1980},
+        {name: `Jimi Hendrix`, value: 1970},
+        {name: `Freddie Mercury`, value: 1991},
+        {name: `Kurt Cobain`, value: 1994},
+        {name: `Dio`, value: 2010},
+        {name: `Lemmy`, value: 2015},
+        {name: `Malcom Young`, value: 2017},
+      ],
     },
   ])
 
@@ -99,6 +142,10 @@ let isItemInRightOrder = (
 
 let intToLocaleString: int => string = %raw(`
   function(int) {
+    if (int < 3000) {
+      return int.toString();
+    }
+
     return int.toLocaleString();
   }
 `)
@@ -201,6 +248,7 @@ module Component = {
       let startX = ReactEvent.Pointer.pageX(e)
       let startY = ReactEvent.Pointer.pageY(e)
 
+      element.classList.add(."dragging")
       setSelectedItem(_ => Some({item: item, element: element, startX: startX, startY: startY}))
 
       setDropZones(_ =>
@@ -269,6 +317,7 @@ module Component = {
       | None => ()
       }
 
+      item.element.classList.remove(."dragging")
       setSelectedItem(_ => None)
 
       dropZones->Belt.Array.forEach(((dropZone, _)) => {
@@ -317,7 +366,7 @@ module Component = {
       <main className=main onPointerMove onPointerUp>
         <div>
           <div className=name> {React.string(currentQuestion.name)} </div>
-          <div className=legend> {React.string("weniger")} </div>
+          <div className=legend> {React.string(currentQuestion.less)} </div>
           {sortedList
           ->Belt.Array.map(item => {
             <div className=slot key={Belt.Int.toString(item.value)}>
@@ -328,7 +377,7 @@ module Component = {
             </div>
           })
           ->React.array}
-          <div className=legend> {React.string("mehr")} </div>
+          <div className=legend> {React.string(currentQuestion.more)} </div>
         </div>
         <div className=optionsContainer>
           {options
