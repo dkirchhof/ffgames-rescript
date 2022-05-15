@@ -7,6 +7,7 @@ module App = {
       | ""  => <Home.Component /> 
       | "/appicons-zeichnen" => <Appicons.Component /> 
       | "/bandlogo-hangman" => <Hangman.Component />
+      | "/maskottchen" => <Mascot.Component />
       | "/porno-pantomime" => <Pantomime.Component />
       | "/sortieren" => <SortDnD.Component />
       | "/wer-kommt" => <YesNo.Component />

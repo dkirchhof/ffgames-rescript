@@ -36,6 +36,7 @@ module Component = {
       <main className=main>
         <Link game=Appicons.meta />
         <Link game=Hangman.meta />
+        <Link game=Mascot.meta />
         <Link game=Pantomime.meta />
         <Link game=SortDnD.meta />
         <Link game=YesNo.meta />
