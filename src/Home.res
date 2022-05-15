@@ -24,7 +24,7 @@ module Component = {
     flex-direction: column;
     gap: 1rem;
 
-    padding: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
   `)
 
   @react.component
