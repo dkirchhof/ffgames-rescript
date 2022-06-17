@@ -2,7 +2,7 @@ let string_of_char = c => String.make(1, c)
 
 let meta: Game.meta = {
   name: "Bandlogo-Hangman",
-  url: "/#/bandlogo-hangman",
+  url: Config.baseUrl ++ "/#/bandlogo-hangman",
 }
 
 module Data = {
@@ -232,7 +232,7 @@ module Component = {
     let (letters, setLetters) = React.useState(_ => [])
     let (showResultAnimation, setShowResultAnimation) = React.useState(_ => None)
 
-    let img = `/assets/bandlogos/${Data.shuffledBands[round - 1]}.jpg`
+    let img = `${Config.baseUrl}/assets/bandlogos/${Data.shuffledBands[round - 1]}.jpg`
 
     React.useEffect1(() => {
       setSlotGroups(_ => SlotGroups.make(Data.shuffledBands[round - 1]))

@@ -1,6 +1,6 @@
 let meta: Game.meta = {
   name: "Appicons zeichnen",
-  url: "/#/appicons-zeichnen",
+  url: Config.baseUrl ++ "/#/appicons-zeichnen",
 }
 
 module Data = {
@@ -72,7 +72,7 @@ module Component = {
     width: 120px;
     height: 120px;
     
-    background-image: url(/assets/appicons/appicons.svg);
+    background-image: url(${Config.baseUrl}/assets/appicons/appicons.svg);
     background-color: whitesmoke;
     border-radius: 20px;
 

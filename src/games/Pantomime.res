@@ -1,6 +1,6 @@
 let meta: Game.meta = {
   name: "Porno-Pantomime",
-  url: "/#/porno-pantomime",
+  url: Config.baseUrl ++ "/#/porno-pantomime",
 }
 
 module Data = {

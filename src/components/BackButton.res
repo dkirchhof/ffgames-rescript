@@ -23,7 +23,7 @@ module Component = {
 
   @react.component
   let make = () => {
-    <a href="/" className>
+    <a href=Config.homeUrl className>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           d=" M 16.5 2 L 7.5 12 L 16.5 22"

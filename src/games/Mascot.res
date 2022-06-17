@@ -1,6 +1,6 @@
 let meta: Game.meta = {
   name: "Maskottchen",
-  url: "/#/maskottchen",
+  url: Config.baseUrl ++ "/#/maskottchen",
 }
 
 module Data = {
@@ -219,7 +219,7 @@ module Component = {
           <React.Fragment>
             <div className=name> {React.string(question'.name)} </div>
             <div className=imageContainer>
-              {showImage ? <img src={`/assets/mascots/${question'.name}.jpg`} /> : React.null}
+              {showImage ? <img src={`${Config.baseUrl}/assets/mascots/${question'.name}.jpg`} /> : React.null}
             </div>
             <div className=answersContainer>
               {question'.answers

@@ -1,7 +1,7 @@
 {
     "scripts": {
         "build-watch": "rescript build -w",
-        "bundle-watch": "esbuild src/index.bs.js --bundle --sourcemap --outfile=public/bundle.js --watch",
+        "bundle-watch": "esbuild src/index.bs.js --bundle --sourcemap --watch --outfile=public/bundle.js",
         "bundle-prod": "esbuild src/index.bs.js --bundle --minify --outfile=public/bundle.js",
         "serve": "lite-server"
     },

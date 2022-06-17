@@ -1,6 +1,6 @@
 let meta: Game.meta = {
   name: "Sortieren",
-  url: "/#/sortieren",
+  url: Config.baseUrl ++ "/#/sortieren",
 }
 
 module Data = {
