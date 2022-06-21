@@ -1,350 +1,373 @@
 let meta: Game.meta = {
-  name: "Wer kommt?",
-  url: Config.baseUrl ++ "/#/wer-kommt",
+  name: "Ja? Nein?",
+  url: Config.baseUrl ++ "/#/ja-oder-nein",
 }
 
 module Data = {
-  type band = {
-    name: string,
-    isComing: bool,
+  type yesOrNo = No | Yes
+
+  type answer = {
+    text: string,
+    rightAnswer: yesOrNo,
+    userAnswer: option<yesOrNo>,
   }
 
-  let bands = [
-    {name: `1349`, isComing: false},
-    {name: `8kids`, isComing: false},
-    {name: `Abbath`, isComing: false},
-    {name: `Aborted`, isComing: false},
-    {name: `Adept`, isComing: false},
-    {name: `Airbourne`, isComing: false},
-    {name: `Alcest`, isComing: false},
-    {name: `Amaranthe`, isComing: true},
-    {name: `Amon Amarth`, isComing: false},
-    {name: `Amorphis`, isComing: false},
-    {name: `Animals as Leaders`, isComing: false},
-    {name: `Annisokay`, isComing: false},
-    {name: `Anti-Flag`, isComing: true},
-    {name: `Any Given Day`, isComing: true},
-    {name: `Apocalyptica`, isComing: false},
-    {name: `Apologies`, isComing: false},
-    {name: `Arch Enemy`, isComing: false},
-    {name: `Architects`, isComing: false},
-    {name: `Arise from the Fallen`, isComing: false},
-    {name: `As Everything Unfolds`, isComing: true},
-    {name: `Asking Alexandria`, isComing: false},
-    {name: `At the Gates`, isComing: false},
-    {name: `Atari Teenage Riot`, isComing: false},
-    {name: `August Burns Red`, isComing: false},
-    {name: `Avatar`, isComing: false},
-    {name: `Bad Omens`, isComing: false},
-    {name: `Batushka`, isComing: false},
-    {name: `Beartooth`, isComing: true},
-    {name: `Behemoth`, isComing: false},
-    {name: `Being as an Ocean`, isComing: false},
-    {name: `Belphegor`, isComing: false},
-    {name: `Benediction`, isComing: false},
-    {name: `Billybio`, isComing: false},
-    {name: `Black Peaks`, isComing: false},
-    {name: `Blackout Problems`, isComing: true},
-    {name: `Bleed From Within`, isComing: true},
-    {name: `Bleeding Through`, isComing: false},
-    {name: `Bob Vylan`, isComing: true},
-    {name: `Body Count feat. Ice-T`, isComing: false},
-    {name: `Bombus`, isComing: false},
-    {name: `Booze & Glory`, isComing: false},
-    {name: `Boston Manor`, isComing: true},
-    {name: `Boysetsfire`, isComing: true},
-    {name: `Broken Teeth`, isComing: false},
-    {name: `Brothers in Arms`, isComing: false},
-    {name: `Bullet for My Valentine`, isComing: true},
-    {name: `Bury Tomorrow`, isComing: true},
-    {name: `Caliban`, isComing: false},
-    {name: `Callejon`, isComing: false},
-    {name: `Cane Hill`, isComing: false},
-    {name: `Cannibal Corpse`, isComing: false},
-    {name: `Carach Angren`, isComing: false},
-    {name: `Carnage Calligraphy`, isComing: false},
-    {name: `Combichrist`, isComing: false},
-    {name: `Comeback Kid`, isComing: true},
-    {name: `Counterfeit`, isComing: false},
-    {name: `Counterparts`, isComing: true},
-    {name: `Cradle of Filth`, isComing: false},
-    {name: `Creeper`, isComing: true},
-    {name: `Crossfaith`, isComing: true},
-    {name: `Cryptopsy`, isComing: false},
-    {name: `Crystal Lake`, isComing: false},
-    {name: `D.R.I.`, isComing: false},
-    {name: `Dagoba`, isComing: false},
-    {name: `Dark Funeral`, isComing: false},
-    {name: `Dawn Rayd`, isComing: false},
-    {name: `Dead Poet Society`, isComing: true},
-    {name: `Deafheaven`, isComing: false},
-    {name: `Debauchery`, isComing: false},
-    {name: `Ded`, isComing: false},
-    {name: `Deez Nuts`, isComing: false},
-    {name: `Dethroned`, isComing: false},
-    {name: `Die Kassierer`, isComing: false},
-    {name: `Dool`, isComing: false},
-    {name: `Dragged Under`, isComing: true},
-    {name: `Drain`, isComing: true},
-    {name: `Dritte Wahl`, isComing: false},
-    {name: `Dropkick Murphys`, isComing: false},
-    {name: `Dropout Kings`, isComing: true},
-    {name: `Drunken Swallows`, isComing: false},
-    {name: `Dust Bolt`, isComing: false},
-    {name: `Dying Fetus`, isComing: false},
-    {name: `Ektomorf`, isComing: false},
-    {name: `Elsterglanz`, isComing: false},
-    {name: `Emil Bulls`, isComing: true},
-    {name: `Emmure`, isComing: false},
-    {name: `Employed to Serve`, isComing: false},
-    {name: `Entombed A.D.`, isComing: false},
-    {name: `Equilibrium`, isComing: true},
-    {name: `Eskimo Callboy`, isComing: false},
-    {name: `Excrementory Grindfuckers`, isComing: false},
-    {name: `Eïs`, isComing: false},
-    {name: `First Blood`, isComing: false},
-    {name: `Fleshgod Apocalypse`, isComing: false},
-    {name: `Flogging Molly`, isComing: false},
-    {name: `Four Year Strong`, isComing: false},
-    {name: `Frog Leap`, isComing: true},
-    {name: `From Fall To Spring`, isComing: true},
-    {name: `Future Palace`, isComing: true},
-    {name: `Gatecreeper`, isComing: true},
-    {name: `Get The Shot`, isComing: true},
-    {name: `Ghøstkid`, isComing: true},
-    {name: `God Dethroned`, isComing: false},
-    {name: `Gutalax`, isComing: true},
-    {name: `H2O`, isComing: false},
-    {name: `Harakiri for the Sky`, isComing: false},
-    {name: `Harms Way`, isComing: false},
-    {name: `Hatebreed`, isComing: false},
-    {name: `Heaven Shall Burn`, isComing: true},
-    {name: `Holding Absence`, isComing: true},
-    {name: `I Have None`, isComing: false},
-    {name: `Ignite`, isComing: false},
-    {name: `Imminence`, isComing: true},
-    {name: `In Flames`, isComing: false},
-    {name: `In This Moment`, isComing: false},
-    {name: `Infected Rain`, isComing: true},
-    {name: `Jinjer`, isComing: false},
-    {name: `Johnny Deathshadow`, isComing: false},
-    {name: `Judas Priest`, isComing: false},
-    {name: `Kadavar`, isComing: false},
-    {name: `Kanzler & Söhne`, isComing: false},
-    {name: `Kataklysm`, isComing: false},
-    {name: `Killswitch Engage`, isComing: false},
-    {name: `Knocked Loose`, isComing: true},
-    {name: `Knorkator`, isComing: false},
-    {name: `Konvent`, isComing: true},
-    {name: `Kreator`, isComing: false},
-    {name: `Kvelertak`, isComing: true},
-    {name: `Lamb of God`, isComing: false},
-    {name: `Landmvrks`, isComing: true},
-    {name: `Life of Agony`, isComing: false},
-    {name: `Limp Bizkit`, isComing: false},
-    {name: `Lionheart`, isComing: false},
-    {name: `Madball`, isComing: false},
-    {name: `Malevolence`, isComing: true},
-    {name: `Mambo Kurt & Gäste`, isComing: false},
-    {name: `Mambo Kurt`, isComing: false},
-    {name: `Manos`, isComing: false},
-    {name: `Mantar`, isComing: false},
-    {name: `Marduk`, isComing: false},
-    {name: `Massendefekt`, isComing: false},
-    {name: `Me & That Man`, isComing: true},
-    {name: `Megaherz`, isComing: false},
-    {name: `Meshuggah`, isComing: false},
-    {name: `Milking the Goatmachine`, isComing: false},
-    {name: `Ministry`, isComing: false},
-    {name: `Misharped Fortune`, isComing: false},
-    {name: `Miss May I`, isComing: false},
-    {name: `Moonsorrow`, isComing: false},
-    {name: `Morgoth`, isComing: false},
-    {name: `Moscow Death Brigade`, isComing: true},
-    {name: `Motionless in White`, isComing: false},
-    {name: `Municipal Waste`, isComing: false},
-    {name: `Mute Nation`, isComing: false},
-    {name: `Napalm Death`, isComing: false},
-    {name: `Nasty`, isComing: true},
-    {name: `Neck Deep`, isComing: true},
-    {name: `Necrophobic`, isComing: false},
-    {name: `Northlane`, isComing: false},
-    {name: `Nothing More`, isComing: false},
-    {name: `Novelists`, isComing: false},
-    {name: `Obey the Brave`, isComing: false},
-    {name: `Obituary`, isComing: false},
-    {name: `Oceans Ate Alaska`, isComing: false},
-    {name: `Oceans`, isComing: true},
-    {name: `Of Mice & Men`, isComing: false},
-    {name: `One Step Closer`, isComing: true},
-    {name: `Orange Goblin`, isComing: false},
-    {name: `Orbit Culture`, isComing: true},
-    {name: `Our Last Night`, isComing: false},
-    {name: `Paleface`, isComing: true},
-    {name: `Parkway Drive`, isComing: false},
-    {name: `Perkele`, isComing: false},
-    {name: `Polar`, isComing: false},
-    {name: `Polaris`, isComing: false},
-    {name: `Portrayal Of Guilt`, isComing: true},
-    {name: `Power Trip`, isComing: false},
-    {name: `Powerflo`, isComing: false},
-    {name: `Primordial`, isComing: false},
-    {name: `Pro Pain`, isComing: false},
-    {name: `Psychopunch`, isComing: false},
-    {name: `Psychostick`, isComing: false},
-    {name: `Raised Fist`, isComing: true},
-    {name: `Rise of the Northstar`, isComing: false},
-    {name: `Risk It`, isComing: false},
-    {name: `Rolo Tomassi`, isComing: true},
-    {name: `Rotting Christ`, isComing: true},
-    {name: `Royal Republic`, isComing: false},
-    {name: `SETYØURSAILS`, isComing: true},
-    {name: `Scowl`, isComing: true},
-    {name: `Seeyouspacecowboy`, isComing: true},
-    {name: `Septicflesh`, isComing: false},
-    {name: `Sepultura`, isComing: false},
-    {name: `Shining`, isComing: false},
-    {name: `Siamese`, isComing: true},
-    {name: `Sick of It All`, isComing: false},
-    {name: `Silence Is Betrayal`, isComing: false},
-    {name: `Silent Descent`, isComing: false},
-    {name: `Silverstein`, isComing: true},
-    {name: `Skynd`, isComing: true},
-    {name: `Soilwork`, isComing: true},
-    {name: `Sondaschule`, isComing: false},
-    {name: `Soulburn`, isComing: false},
-    {name: `Soulfly`, isComing: false},
-    {name: `Spasm`, isComing: false},
-    {name: `Stick To Your Guns`, isComing: true},
-    {name: `Stray from the Path`, isComing: false},
-    {name: `Suicide Silence`, isComing: true},
-    {name: `Swiss & die Andern`, isComing: true},
-    {name: `Sylosis`, isComing: false},
-    {name: `Tankard`, isComing: false},
-    {name: `Tanzwut`, isComing: false},
-    {name: `Tausend Löwen unter Feinden`, isComing: false},
-    {name: `Tell You What Now`, isComing: false},
-    {name: `ten56`, isComing: true},
-    {name: `Tendencia`, isComing: false},
-    {name: `Tenside`, isComing: false},
-    {name: `Terror`, isComing: false},
-    {name: `TesseracT`, isComing: false},
-    {name: `The Amity Affliction`, isComing: false},
-    {name: `The Black Dahlia Murder`, isComing: false},
-    {name: `The Butcher Sisters`, isComing: false},
-    {name: `The Disaster Area`, isComing: true},
-    {name: `The Ghost Inside`, isComing: true},
-    {name: `The Hirsch Effekt`, isComing: false},
-    {name: `The Ocean`, isComing: false},
-    {name: `The Rumjacks`, isComing: true},
-    {name: `Thy Art Is Murder`, isComing: false},
-    {name: `Toxpack`, isComing: false},
-    {name: `Tragedy of Mine`, isComing: false},
-    {name: `Trash Boat`, isComing: true},
-    {name: `Triptykon`, isComing: false},
-    {name: `Trollfest`, isComing: false},
-    {name: `Trynity`, isComing: false},
-    {name: `Turnstile`, isComing: false},
-    {name: `tuXedoo`, isComing: false},
-    {name: `Unleashed`, isComing: false},
-    {name: `Val Sinestra`, isComing: false},
-    {name: `Vallenfyre`, isComing: false},
-    {name: `Vein.FM`, isComing: true},
-    {name: `Venom Prison`, isComing: false},
-    {name: `Venues`, isComing: true},
-    {name: `Walking Dead on Broadway`, isComing: false},
-    {name: `Wargasm`, isComing: true},
-    {name: `We Butter the Bread with Butter`, isComing: false},
-    {name: `While She Sleeps`, isComing: false},
-    {name: `Whitechapel`, isComing: false},
-    {name: `Wisdom in Chains`, isComing: false},
-    {name: `Wolf Down`, isComing: false},
-    {name: `Wolfheart`, isComing: false},
-    {name: `Wolves in the Throne Room`, isComing: false},
-    {name: `ZSK`, isComing: false},
-    {name: `Ze Gran Zeft`, isComing: false},
-    {name: `Zeal & Ardor`, isComing: true},
-    {name: `Zombiez`, isComing: true},
+  type question = {
+    text: string,
+    answers: array<answer>,
+  }
+
+  let rounds = [
+    {
+      text: `Über welche Möbel wird in dem Lied "Valhalleluja" gesungen?`,
+      answers: [
+        {text: `ASKHOLMEN`, rightAnswer: No, userAnswer: None},
+        {text: `BAGGEBO`, rightAnswer: No, userAnswer: None},
+        {text: `BESTÅ`, rightAnswer: Yes, userAnswer: None},
+        {text: `BYÅS`, rightAnswer: No, userAnswer: None},
+        {text: `HEMNES`, rightAnswer: No, userAnswer: None},
+        {text: `KALLAX`, rightAnswer: No, userAnswer: None},
+        {text: `KIVIK`, rightAnswer: Yes, userAnswer: None},
+        {text: `KNOPPARP`, rightAnswer: Yes, userAnswer: None},
+        {text: `MALM`, rightAnswer: No, userAnswer: None},
+        {text: `SLATTUM`, rightAnswer: Yes, userAnswer: None},
+        {text: `VITTSJÖ`, rightAnswer: Yes, userAnswer: None},
+      ],
+    },
+    {
+      text: `Welche Bands spielen 2022 auf dem Full Force?`,
+      answers: [
+        {text: `1349`, rightAnswer: No, userAnswer: None},
+        {text: `8kids`, rightAnswer: No, userAnswer: None},
+        {text: `Abbath`, rightAnswer: No, userAnswer: None},
+        {text: `Aborted`, rightAnswer: No, userAnswer: None},
+        {text: `Adept`, rightAnswer: No, userAnswer: None},
+        {text: `Airbourne`, rightAnswer: No, userAnswer: None},
+        {text: `Alcest`, rightAnswer: No, userAnswer: None},
+        {text: `Amaranthe`, rightAnswer: Yes, userAnswer: None},
+        {text: `Amon Amarth`, rightAnswer: No, userAnswer: None},
+        {text: `Amorphis`, rightAnswer: No, userAnswer: None},
+        {text: `Animals as Leaders`, rightAnswer: No, userAnswer: None},
+        {text: `Annisokay`, rightAnswer: No, userAnswer: None},
+        {text: `Anti-Flag`, rightAnswer: Yes, userAnswer: None},
+        {text: `Any Given Day`, rightAnswer: Yes, userAnswer: None},
+        {text: `Apocalyptica`, rightAnswer: No, userAnswer: None},
+        {text: `Apologies`, rightAnswer: No, userAnswer: None},
+        {text: `Arch Enemy`, rightAnswer: No, userAnswer: None},
+        {text: `Architects`, rightAnswer: No, userAnswer: None},
+        {text: `Arise from the Fallen`, rightAnswer: No, userAnswer: None},
+        {text: `As Everything Unfolds`, rightAnswer: Yes, userAnswer: None},
+        {text: `Asking Alexandria`, rightAnswer: No, userAnswer: None},
+        {text: `At the Gates`, rightAnswer: No, userAnswer: None},
+        {text: `Atari Teenage Riot`, rightAnswer: No, userAnswer: None},
+        {text: `August Burns Red`, rightAnswer: No, userAnswer: None},
+        {text: `Avatar`, rightAnswer: No, userAnswer: None},
+        {text: `Bad Omens`, rightAnswer: No, userAnswer: None},
+        {text: `Batushka`, rightAnswer: No, userAnswer: None},
+        {text: `Beartooth`, rightAnswer: Yes, userAnswer: None},
+        {text: `Behemoth`, rightAnswer: No, userAnswer: None},
+        {text: `Being as an Ocean`, rightAnswer: No, userAnswer: None},
+        {text: `Belphegor`, rightAnswer: No, userAnswer: None},
+        {text: `Benediction`, rightAnswer: No, userAnswer: None},
+        {text: `Billybio`, rightAnswer: No, userAnswer: None},
+        {text: `Black Peaks`, rightAnswer: No, userAnswer: None},
+        {text: `Blackout Problems`, rightAnswer: Yes, userAnswer: None},
+        {text: `Bleed From Within`, rightAnswer: Yes, userAnswer: None},
+        {text: `Bleeding Through`, rightAnswer: No, userAnswer: None},
+        {text: `Bob Vylan`, rightAnswer: Yes, userAnswer: None},
+        {text: `Body Count feat. Ice-T`, rightAnswer: No, userAnswer: None},
+        {text: `Bombus`, rightAnswer: No, userAnswer: None},
+        {text: `Booze & Glory`, rightAnswer: No, userAnswer: None},
+        {text: `Boston Manor`, rightAnswer: Yes, userAnswer: None},
+        {text: `Boysetsfire`, rightAnswer: Yes, userAnswer: None},
+        {text: `Broken Teeth`, rightAnswer: No, userAnswer: None},
+        {text: `Brothers in Arms`, rightAnswer: No, userAnswer: None},
+        {text: `Bullet for My Valentine`, rightAnswer: Yes, userAnswer: None},
+        {text: `Bury Tomorrow`, rightAnswer: Yes, userAnswer: None},
+        {text: `Caliban`, rightAnswer: No, userAnswer: None},
+        {text: `Callejon`, rightAnswer: No, userAnswer: None},
+        {text: `Cane Hill`, rightAnswer: No, userAnswer: None},
+        {text: `Cannibal Corpse`, rightAnswer: No, userAnswer: None},
+        {text: `Carach Angren`, rightAnswer: No, userAnswer: None},
+        {text: `Carnage Calligraphy`, rightAnswer: No, userAnswer: None},
+        {text: `Combichrist`, rightAnswer: No, userAnswer: None},
+        {text: `Comeback Kid`, rightAnswer: Yes, userAnswer: None},
+        {text: `Counterfeit`, rightAnswer: No, userAnswer: None},
+        {text: `Counterparts`, rightAnswer: Yes, userAnswer: None},
+        {text: `Cradle of Filth`, rightAnswer: No, userAnswer: None},
+        {text: `Creeper`, rightAnswer: Yes, userAnswer: None},
+        {text: `Crossfaith`, rightAnswer: Yes, userAnswer: None},
+        {text: `Cryptopsy`, rightAnswer: No, userAnswer: None},
+        {text: `Crystal Lake`, rightAnswer: No, userAnswer: None},
+        {text: `D.R.I.`, rightAnswer: No, userAnswer: None},
+        {text: `Dagoba`, rightAnswer: No, userAnswer: None},
+        {text: `Dark Funeral`, rightAnswer: No, userAnswer: None},
+        {text: `Dawn Rayd`, rightAnswer: No, userAnswer: None},
+        {text: `Dead Poet Society`, rightAnswer: Yes, userAnswer: None},
+        {text: `Deafheaven`, rightAnswer: No, userAnswer: None},
+        {text: `Debauchery`, rightAnswer: No, userAnswer: None},
+        {text: `Ded`, rightAnswer: No, userAnswer: None},
+        {text: `Deez Nuts`, rightAnswer: No, userAnswer: None},
+        {text: `Dethroned`, rightAnswer: No, userAnswer: None},
+        {text: `Die Kassierer`, rightAnswer: No, userAnswer: None},
+        {text: `Dool`, rightAnswer: No, userAnswer: None},
+        {text: `Dragged Under`, rightAnswer: Yes, userAnswer: None},
+        {text: `Drain`, rightAnswer: Yes, userAnswer: None},
+        {text: `Dritte Wahl`, rightAnswer: No, userAnswer: None},
+        {text: `Dropkick Murphys`, rightAnswer: No, userAnswer: None},
+        {text: `Dropout Kings`, rightAnswer: Yes, userAnswer: None},
+        {text: `Drunken Swallows`, rightAnswer: No, userAnswer: None},
+        {text: `Dust Bolt`, rightAnswer: No, userAnswer: None},
+        {text: `Dying Fetus`, rightAnswer: No, userAnswer: None},
+        {text: `Ektomorf`, rightAnswer: No, userAnswer: None},
+        {text: `Elsterglanz`, rightAnswer: No, userAnswer: None},
+        {text: `Emil Bulls`, rightAnswer: Yes, userAnswer: None},
+        {text: `Emmure`, rightAnswer: No, userAnswer: None},
+        {text: `Employed to Serve`, rightAnswer: No, userAnswer: None},
+        {text: `Entombed A.D.`, rightAnswer: No, userAnswer: None},
+        {text: `Equilibrium`, rightAnswer: Yes, userAnswer: None},
+        {text: `Eskimo Callboy`, rightAnswer: No, userAnswer: None},
+        {text: `Excrementory Grindfuckers`, rightAnswer: No, userAnswer: None},
+        {text: `Eïs`, rightAnswer: No, userAnswer: None},
+        {text: `First Blood`, rightAnswer: No, userAnswer: None},
+        {text: `Fleshgod Apocalypse`, rightAnswer: No, userAnswer: None},
+        {text: `Flogging Molly`, rightAnswer: No, userAnswer: None},
+        {text: `Four Year Strong`, rightAnswer: No, userAnswer: None},
+        {text: `Frog Leap`, rightAnswer: Yes, userAnswer: None},
+        {text: `From Fall To Spring`, rightAnswer: Yes, userAnswer: None},
+        {text: `Future Palace`, rightAnswer: Yes, userAnswer: None},
+        {text: `Gatecreeper`, rightAnswer: Yes, userAnswer: None},
+        {text: `Get The Shot`, rightAnswer: Yes, userAnswer: None},
+        {text: `Ghøstkid`, rightAnswer: Yes, userAnswer: None},
+        {text: `God Dethroned`, rightAnswer: No, userAnswer: None},
+        {text: `Gutalax`, rightAnswer: Yes, userAnswer: None},
+        {text: `H2O`, rightAnswer: No, userAnswer: None},
+        {text: `Harakiri for the Sky`, rightAnswer: No, userAnswer: None},
+        {text: `Harms Way`, rightAnswer: No, userAnswer: None},
+        {text: `Hatebreed`, rightAnswer: No, userAnswer: None},
+        {text: `Heaven Shall Burn`, rightAnswer: Yes, userAnswer: None},
+        {text: `Holding Absence`, rightAnswer: Yes, userAnswer: None},
+        {text: `I Have None`, rightAnswer: No, userAnswer: None},
+        {text: `Ignite`, rightAnswer: No, userAnswer: None},
+        {text: `Imminence`, rightAnswer: Yes, userAnswer: None},
+        {text: `In Flames`, rightAnswer: No, userAnswer: None},
+        {text: `In This Moment`, rightAnswer: No, userAnswer: None},
+        {text: `Infected Rain`, rightAnswer: Yes, userAnswer: None},
+        {text: `Jinjer`, rightAnswer: No, userAnswer: None},
+        {text: `Johnny Deathshadow`, rightAnswer: No, userAnswer: None},
+        {text: `Judas Priest`, rightAnswer: No, userAnswer: None},
+        {text: `Kadavar`, rightAnswer: No, userAnswer: None},
+        {text: `Kanzler & Söhne`, rightAnswer: No, userAnswer: None},
+        {text: `Kataklysm`, rightAnswer: No, userAnswer: None},
+        {text: `Killswitch Engage`, rightAnswer: No, userAnswer: None},
+        {text: `Knocked Loose`, rightAnswer: Yes, userAnswer: None},
+        {text: `Knorkator`, rightAnswer: No, userAnswer: None},
+        {text: `Konvent`, rightAnswer: Yes, userAnswer: None},
+        {text: `Kreator`, rightAnswer: No, userAnswer: None},
+        {text: `Kvelertak`, rightAnswer: Yes, userAnswer: None},
+        {text: `Lamb of God`, rightAnswer: No, userAnswer: None},
+        {text: `Landmvrks`, rightAnswer: Yes, userAnswer: None},
+        {text: `Life of Agony`, rightAnswer: No, userAnswer: None},
+        {text: `Limp Bizkit`, rightAnswer: No, userAnswer: None},
+        {text: `Lionheart`, rightAnswer: No, userAnswer: None},
+        {text: `Madball`, rightAnswer: No, userAnswer: None},
+        {text: `Malevolence`, rightAnswer: Yes, userAnswer: None},
+        {text: `Mambo Kurt & Gäste`, rightAnswer: No, userAnswer: None},
+        {text: `Mambo Kurt`, rightAnswer: No, userAnswer: None},
+        {text: `Manos`, rightAnswer: No, userAnswer: None},
+        {text: `Mantar`, rightAnswer: No, userAnswer: None},
+        {text: `Marduk`, rightAnswer: No, userAnswer: None},
+        {text: `Massendefekt`, rightAnswer: No, userAnswer: None},
+        {text: `Me & That Man`, rightAnswer: Yes, userAnswer: None},
+        {text: `Megaherz`, rightAnswer: No, userAnswer: None},
+        {text: `Meshuggah`, rightAnswer: No, userAnswer: None},
+        {text: `Milking the Goatmachine`, rightAnswer: No, userAnswer: None},
+        {text: `Ministry`, rightAnswer: No, userAnswer: None},
+        {text: `Misharped Fortune`, rightAnswer: No, userAnswer: None},
+        {text: `Miss May I`, rightAnswer: No, userAnswer: None},
+        {text: `Moonsorrow`, rightAnswer: No, userAnswer: None},
+        {text: `Morgoth`, rightAnswer: No, userAnswer: None},
+        {text: `Moscow Death Brigade`, rightAnswer: Yes, userAnswer: None},
+        {text: `Motionless in White`, rightAnswer: No, userAnswer: None},
+        {text: `Municipal Waste`, rightAnswer: No, userAnswer: None},
+        {text: `Mute Nation`, rightAnswer: No, userAnswer: None},
+        {text: `Napalm Death`, rightAnswer: No, userAnswer: None},
+        {text: `Nasty`, rightAnswer: Yes, userAnswer: None},
+        {text: `Neck Deep`, rightAnswer: Yes, userAnswer: None},
+        {text: `Necrophobic`, rightAnswer: No, userAnswer: None},
+        {text: `Northlane`, rightAnswer: No, userAnswer: None},
+        {text: `Nothing More`, rightAnswer: No, userAnswer: None},
+        {text: `Novelists`, rightAnswer: No, userAnswer: None},
+        {text: `Obey the Brave`, rightAnswer: No, userAnswer: None},
+        {text: `Obituary`, rightAnswer: No, userAnswer: None},
+        {text: `Oceans Ate Alaska`, rightAnswer: No, userAnswer: None},
+        {text: `Oceans`, rightAnswer: Yes, userAnswer: None},
+        {text: `Of Mice & Men`, rightAnswer: No, userAnswer: None},
+        {text: `One Step Closer`, rightAnswer: Yes, userAnswer: None},
+        {text: `Orange Goblin`, rightAnswer: No, userAnswer: None},
+        {text: `Orbit Culture`, rightAnswer: Yes, userAnswer: None},
+        {text: `Our Last Night`, rightAnswer: No, userAnswer: None},
+        {text: `Paleface`, rightAnswer: Yes, userAnswer: None},
+        {text: `Parkway Drive`, rightAnswer: No, userAnswer: None},
+        {text: `Perkele`, rightAnswer: No, userAnswer: None},
+        {text: `Polar`, rightAnswer: No, userAnswer: None},
+        {text: `Polaris`, rightAnswer: No, userAnswer: None},
+        {text: `Portrayal Of Guilt`, rightAnswer: Yes, userAnswer: None},
+        {text: `Power Trip`, rightAnswer: No, userAnswer: None},
+        {text: `Powerflo`, rightAnswer: No, userAnswer: None},
+        {text: `Primordial`, rightAnswer: No, userAnswer: None},
+        {text: `Pro Pain`, rightAnswer: No, userAnswer: None},
+        {text: `Psychopunch`, rightAnswer: No, userAnswer: None},
+        {text: `Psychostick`, rightAnswer: No, userAnswer: None},
+        {text: `Raised Fist`, rightAnswer: Yes, userAnswer: None},
+        {text: `Rise of the Northstar`, rightAnswer: No, userAnswer: None},
+        {text: `Risk It`, rightAnswer: No, userAnswer: None},
+        {text: `Rolo Tomassi`, rightAnswer: Yes, userAnswer: None},
+        {text: `Rotting Christ`, rightAnswer: Yes, userAnswer: None},
+        {text: `Royal Republic`, rightAnswer: No, userAnswer: None},
+        {text: `SETYØURSAILS`, rightAnswer: Yes, userAnswer: None},
+        {text: `Scowl`, rightAnswer: Yes, userAnswer: None},
+        {text: `Seeyouspacecowboy`, rightAnswer: Yes, userAnswer: None},
+        {text: `Septicflesh`, rightAnswer: No, userAnswer: None},
+        {text: `Sepultura`, rightAnswer: No, userAnswer: None},
+        {text: `Shining`, rightAnswer: No, userAnswer: None},
+        {text: `Siamese`, rightAnswer: Yes, userAnswer: None},
+        {text: `Sick of It All`, rightAnswer: No, userAnswer: None},
+        {text: `Silence Is Betrayal`, rightAnswer: No, userAnswer: None},
+        {text: `Silent Descent`, rightAnswer: No, userAnswer: None},
+        {text: `Silverstein`, rightAnswer: Yes, userAnswer: None},
+        {text: `Skynd`, rightAnswer: Yes, userAnswer: None},
+        {text: `Soilwork`, rightAnswer: Yes, userAnswer: None},
+        {text: `Sondaschule`, rightAnswer: No, userAnswer: None},
+        {text: `Soulburn`, rightAnswer: No, userAnswer: None},
+        {text: `Soulfly`, rightAnswer: No, userAnswer: None},
+        {text: `Spasm`, rightAnswer: No, userAnswer: None},
+        {text: `Stick To Your Guns`, rightAnswer: Yes, userAnswer: None},
+        {text: `Stray from the Path`, rightAnswer: No, userAnswer: None},
+        {text: `Suicide Silence`, rightAnswer: Yes, userAnswer: None},
+        {text: `Swiss & die Andern`, rightAnswer: Yes, userAnswer: None},
+        {text: `Sylosis`, rightAnswer: No, userAnswer: None},
+        {text: `Tankard`, rightAnswer: No, userAnswer: None},
+        {text: `Tanzwut`, rightAnswer: No, userAnswer: None},
+        {text: `Tausend Löwen unter Feinden`, rightAnswer: No, userAnswer: None},
+        {text: `Tell You What Now`, rightAnswer: No, userAnswer: None},
+        {text: `ten56`, rightAnswer: Yes, userAnswer: None},
+        {text: `Tendencia`, rightAnswer: No, userAnswer: None},
+        {text: `Tenside`, rightAnswer: No, userAnswer: None},
+        {text: `Terror`, rightAnswer: No, userAnswer: None},
+        {text: `TesseracT`, rightAnswer: No, userAnswer: None},
+        {text: `The Amity Affliction`, rightAnswer: No, userAnswer: None},
+        {text: `The Black Dahlia Murder`, rightAnswer: No, userAnswer: None},
+        {text: `The Butcher Sisters`, rightAnswer: No, userAnswer: None},
+        {text: `The Disaster Area`, rightAnswer: Yes, userAnswer: None},
+        {text: `The Ghost Inside`, rightAnswer: Yes, userAnswer: None},
+        {text: `The Hirsch Effekt`, rightAnswer: No, userAnswer: None},
+        {text: `The Ocean`, rightAnswer: No, userAnswer: None},
+        {text: `The Rumjacks`, rightAnswer: Yes, userAnswer: None},
+        {text: `Thy Art Is Murder`, rightAnswer: No, userAnswer: None},
+        {text: `Toxpack`, rightAnswer: No, userAnswer: None},
+        {text: `Tragedy of Mine`, rightAnswer: No, userAnswer: None},
+        {text: `Trash Boat`, rightAnswer: Yes, userAnswer: None},
+        {text: `Triptykon`, rightAnswer: No, userAnswer: None},
+        {text: `Trollfest`, rightAnswer: No, userAnswer: None},
+        {text: `Trynity`, rightAnswer: No, userAnswer: None},
+        {text: `Turnstile`, rightAnswer: No, userAnswer: None},
+        {text: `tuXedoo`, rightAnswer: No, userAnswer: None},
+        {text: `Unleashed`, rightAnswer: No, userAnswer: None},
+        {text: `Val Sinestra`, rightAnswer: No, userAnswer: None},
+        {text: `Vallenfyre`, rightAnswer: No, userAnswer: None},
+        {text: `Vein.FM`, rightAnswer: Yes, userAnswer: None},
+        {text: `Venom Prison`, rightAnswer: No, userAnswer: None},
+        {text: `Venues`, rightAnswer: Yes, userAnswer: None},
+        {text: `Walking Dead on Broadway`, rightAnswer: No, userAnswer: None},
+        {text: `Wargasm`, rightAnswer: Yes, userAnswer: None},
+        {text: `We Butter the Bread with Butter`, rightAnswer: No, userAnswer: None},
+        {text: `While She Sleeps`, rightAnswer: No, userAnswer: None},
+        {text: `Whitechapel`, rightAnswer: No, userAnswer: None},
+        {text: `Wisdom in Chains`, rightAnswer: No, userAnswer: None},
+        {text: `Wolf Down`, rightAnswer: No, userAnswer: None},
+        {text: `Wolfheart`, rightAnswer: No, userAnswer: None},
+        {text: `Wolves in the Throne Room`, rightAnswer: No, userAnswer: None},
+        {text: `ZSK`, rightAnswer: No, userAnswer: None},
+        {text: `Ze Gran Zeft`, rightAnswer: No, userAnswer: None},
+        {text: `Zeal & Ardor`, rightAnswer: Yes, userAnswer: None},
+        {text: `Zombiez`, rightAnswer: Yes, userAnswer: None},
+      ],
+    },
   ]
+
+  let numberOfRounds = Belt.Array.length(rounds)
 }
 
-module Question = {
-  type t = {
-    band: Data.band,
-    answer: option<bool>,
-  }
+module Answer = {
+  open Emotion
 
-  let make = band => {band: band, answer: None}
-  let makeList = bands => Belt.Array.map(bands, make)
+  let className = css(
+    `
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 
-  module Component = {
-    open Emotion
-
-    let className = css(
-      `
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-
-      > div:nth-child(1) {
-        flex: 1;
-      }
-
-      > button {
-        width: 2rem;
-        height: 2rem;
-
-        color: ${Shared.Colors.darkGray};
-        background: ${Shared.Colors.lightGray};
-        border-radius: 0.5rem;
-        border: none;
-
-        font-size: 1rem;
-
-        &.right {
-          background: ${Shared.Colors.green};
-        }
-
-        &.wrong {
-          color: ${Shared.Colors.yellow};
-          background: ${Shared.Colors.orange};
-        }
-      }
-    `,
-    )
-
-    @react.component
-    let make = (~question, ~onAnswerClick) => {
-      let onYesClick = _ => {
-        if Belt.Option.isNone(question.answer) {
-          onAnswerClick(true)
-        }
-      }
-
-      let onNoClick = _ => {
-        if Belt.Option.isNone(question.answer) {
-          onAnswerClick(false)
-        }
-      }
-
-      let yesClassName = switch (question.band.isComing, question.answer) {
-      | (true, Some(true)) => "right"
-      | (false, Some(true)) => "wrong"
-      | _ => ""
-      }
-
-      let noClassName = switch (question.band.isComing, question.answer) {
-      | (true, Some(false)) => "wrong"
-      | (false, Some(false)) => "right"
-      | _ => ""
-      }
-
-      <div className>
-        <div> {React.string(question.band.name)} </div>
-        <button className=yesClassName onClick=onYesClick> {React.string(`✔`)} </button>
-        <button className=noClassName onClick=onNoClick> {React.string(`✘`)} </button>
-      </div>
+    > div:nth-child(1) {
+      flex: 1;
     }
+
+    > button {
+      width: 2rem;
+      height: 2rem;
+
+      color: ${Shared.Colors.darkGray};
+      background: ${Shared.Colors.lightGray};
+      border-radius: 0.5rem;
+      border: none;
+
+      font-size: 1rem;
+
+      &.right {
+        background: ${Shared.Colors.green};
+      }
+
+      &.wrong {
+        color: ${Shared.Colors.yellow};
+        background: ${Shared.Colors.orange};
+      }
+    }
+  `,
+  )
+
+  @react.component
+  let make = (~answer: Data.answer, ~onAnswerClick) => {
+    let onYesClick = _ => {
+      if Belt.Option.isNone(answer.userAnswer) {
+        onAnswerClick(Data.Yes)
+      }
+    }
+
+    let onNoClick = _ => {
+      if Belt.Option.isNone(answer.userAnswer) {
+        onAnswerClick(Data.No)
+      }
+    }
+
+    let match = (answer.rightAnswer, answer.userAnswer)
+
+    let yesClassName = switch match {
+    | (Data.Yes, Some(Data.Yes)) => "right" // if yes and yes clicked
+    | (Data.No, Some(Data.Yes)) => "wrong" // if no and yes clicked
+    | _ => ""
+    }
+
+    let noClassName = switch match {
+    | (Data.Yes, Some(Data.No)) => "wrong" // if yes and no clicked
+    | (Data.No, Some(Data.No)) => "right" // if no and no clicked
+    | _ => ""
+    }
+
+    <div className>
+      <div> {React.string(answer.text)} </div>
+      <button className=yesClassName onClick=onYesClick> {React.string(`✔`)} </button>
+      <button className=noClassName onClick=onNoClick> {React.string(`✘`)} </button>
+    </div>
   }
 }
 
@@ -362,33 +385,54 @@ module Component = {
     overflow-y: scroll;
   `)
 
+  let questionContainer = css(`
+    padding: 1rem 0;
+  `)
+
   @react.component
   let make = () => {
-    let (questions, setQuestions) = React.useState(_ => Question.makeList(Data.bands))
+    let (round, setRound) = React.useState(_ => 1)
+    let (question, setQuestion) = React.useState(_ => Data.rounds[round - 1])
 
-    let answerQuestion = (question: Question.t, answer: bool) => {
-      setQuestions(
-        Array.map(q => {
-          if q === question {
-            {...question, answer: Some(answer)}
-          } else {
-            q
-          }
-        }),
-      )
+    React.useEffect1(() => {
+      setQuestion(_ => Data.rounds[round - 1])
+
+      None
+    }, [round])
+
+    let answerQuestion = (answer: Data.answer, choice: Data.yesOrNo) => {
+      let answers = Belt.Array.map(question.answers, a => {
+        if a === answer {
+          {...a, userAnswer: Some(choice)}
+        } else {
+          a
+        }
+      })
+
+      setQuestion(_ => {...question, answers: answers})
+    }
+
+    let onNextRoundClick = _ => {
+      if round < Data.numberOfRounds {
+        setRound(succ)
+      }
     }
 
     <div className=Shared.Styles.fullscreenContainer>
-      <Header.Component name=meta.name round=1 numberOfRounds=1 />
+      <Header.Component name=meta.name round numberOfRounds=Data.numberOfRounds />
       <main className=main>
-        {questions
-        ->Belt.Array.mapWithIndex((index, question) => {
-          <Question.Component
-            key={Belt.Int.toString(index)} question onAnswerClick={answerQuestion(question)}
-          />
+        <div className=questionContainer> {React.string(question.text)} </div>
+        {question.answers
+        ->Belt.Array.mapWithIndex((index, answer) => {
+          <Answer key={Belt.Int.toString(index)} answer onAnswerClick={answerQuestion(answer)} />
         })
         ->React.array}
       </main>
+      <footer className=Shared.Styles.footer>
+        <button className=Shared.Styles.primaryButton onClick=onNextRoundClick>
+          {React.string(`Nächste Runde`)}
+        </button>
+      </footer>
     </div>
   }
 }

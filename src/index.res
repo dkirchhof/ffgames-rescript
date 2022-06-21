@@ -10,7 +10,7 @@ module App = {
       | "/maskottchen" => <Mascot.Component />
       | "/porno-pantomime" => <Pantomime.Component />
       | "/sortieren" => <SortDnD.Component />
-      | "/wer-kommt" => <YesNo.Component />
+      | "/ja-oder-nein" => <YesNo.Component />
       | _  => <div>{React.string("404")}</div> 
     } 
   }
